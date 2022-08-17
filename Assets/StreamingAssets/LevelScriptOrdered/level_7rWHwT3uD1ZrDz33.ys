@@ -760,14 +760,14 @@
 			"type":"YMatchThree.Core.WaitTurnNode",
 			"ID":"3",
 			"position":"240x100",
-			"height":"36",
+			"height":"37",
 			"count":"1"
 		},
 		{
 			"type":"YMatchThree.Core.LayersControllerNode",
 			"ID":"4",
 			"position":"240x200",
-			"height":"36",
+			"height":"37",
 			"layers":{
 				{
 					"type":"YMatchThree.Core.LayersControllerNode+LayerAction",
@@ -780,14 +780,14 @@
 			"type":"YMatchThree.Core.WaitTurnNode",
 			"ID":"5",
 			"position":"240x300",
-			"height":"36",
+			"height":"37",
 			"count":"1"
 		},
 		{
 			"type":"YMatchThree.Core.LayersControllerNode",
 			"ID":"6",
 			"position":"240x400",
-			"height":"36",
+			"height":"37",
 			"layers":{
 				{
 					"type":"YMatchThree.Core.LayersControllerNode+LayerAction",
@@ -800,21 +800,21 @@
 			"type":"YMatchThree.Core.WaitTurnNode",
 			"ID":"7",
 			"position":"480x100",
-			"height":"36",
+			"height":"37",
 			"count":"1"
 		},
 		{
 			"type":"YMatchThree.Core.WaitTurnNode",
 			"ID":"8",
 			"position":"480x300",
-			"height":"36",
+			"height":"37",
 			"count":"1"
 		},
 		{
 			"type":"YMatchThree.Core.LayersControllerNode",
 			"ID":"10",
 			"position":"480x200",
-			"height":"36",
+			"height":"37",
 			"layers":{
 				{
 					"type":"YMatchThree.Core.LayersControllerNode+LayerAction",
@@ -827,7 +827,7 @@
 			"type":"YMatchThree.Core.LayersControllerNode",
 			"ID":"11",
 			"position":"480x400",
-			"height":"36",
+			"height":"37",
 			"layers":{
 				{
 					"type":"YMatchThree.Core.LayersControllerNode+LayerAction",

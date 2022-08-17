@@ -1,0 +1,15 @@
+ {
+	"type":"Yurowm.Utilities.EditorStorage",
+	"strings":{
+		"dashboard.lastEditor":"Content/Assets"
+	},
+	"bools":{
+		"editorTipsEnabled":"0"
+	},
+	"numbers":{
+		
+	},
+	"serializables":{
+		
+	}
+}

@@ -662,7 +662,7 @@
 			"type":"YMatchThree.Core.LayersControllerNode",
 			"ID":"14",
 			"position":"860x200",
-			"height":"36",
+			"height":"37",
 			"layers":{
 				{
 					"type":"YMatchThree.Core.LayersControllerNode+LayerAction",
@@ -675,7 +675,7 @@
 			"type":"YMatchThree.Core.MatchThreeSwapHelpNode",
 			"ID":"19",
 			"position":"200x440",
-			"height":"36",
+			"height":"37",
 			"handName":"RufusHand",
 			"layerID":"Swap1"
 		},
@@ -683,7 +683,7 @@
 			"type":"YMatchThree.Core.MatchThreeSwapHelpNode",
 			"ID":"20",
 			"position":"420x320",
-			"height":"36",
+			"height":"37",
 			"handName":"RufusHand",
 			"layerID":"Swap2"
 		},
@@ -691,7 +691,7 @@
 			"type":"YMatchThree.Core.MatchThreeSwapHelpNode",
 			"ID":"21",
 			"position":"640x320",
-			"height":"36",
+			"height":"37",
 			"handName":"RufusHand",
 			"layerID":"Swap3"
 		},
@@ -699,7 +699,7 @@
 			"type":"Yurowm.Dialogues.DialogueNode",
 			"ID":"22",
 			"position":"200x320",
-			"height":"74",
+			"height":"77",
 			"instructions":{
 				{
 					"type":"Yurowm.Dialogues.CharacterShowInstruction",
@@ -723,7 +723,7 @@
 			"type":"Yurowm.Dialogues.DialogueNode",
 			"ID":"23",
 			"position":"420x200",
-			"height":"74",
+			"height":"77",
 			"instructions":{
 				{
 					"type":"Yurowm.Dialogues.CharacterShowInstruction",
@@ -747,7 +747,7 @@
 			"type":"Yurowm.Dialogues.DialogueNode",
 			"ID":"24",
 			"position":"640x200",
-			"height":"74",
+			"height":"77",
 			"instructions":{
 				{
 					"type":"Yurowm.Dialogues.CharacterShowInstruction",
@@ -771,7 +771,7 @@
 			"type":"Yurowm.Dialogues.DialogueNode",
 			"ID":"25",
 			"position":"860x280",
-			"height":"74",
+			"height":"77",
 			"instructions":{
 				{
 					"type":"Yurowm.Dialogues.CharacterShowInstruction",
@@ -795,7 +795,7 @@
 			"type":"Yurowm.Dialogues.DialogueNode",
 			"ID":"27",
 			"position":"860x500",
-			"height":"36",
+			"height":"37",
 			"instructions":{
 				{
 					"type":"Yurowm.Dialogues.ClearInstruction"
@@ -806,7 +806,7 @@
 			"type":"Yurowm.Dialogues.DialogueNode",
 			"ID":"28",
 			"position":"-20x260",
-			"height":"93",
+			"height":"97",
 			"instructions":{
 				{
 					"type":"Yurowm.Dialogues.CharacterShowInstruction",
@@ -833,7 +833,7 @@
 			"type":"Yurowm.Dialogues.DialogueNode",
 			"ID":"29",
 			"position":"-20x400",
-			"height":"93",
+			"height":"97",
 			"instructions":{
 				{
 					"type":"Yurowm.Dialogues.CharacterShowInstruction",
@@ -860,7 +860,7 @@
 			"type":"Yurowm.Dialogues.DialogueNode",
 			"ID":"30",
 			"position":"-20x540",
-			"height":"93",
+			"height":"97",
 			"instructions":{
 				{
 					"type":"Yurowm.Dialogues.CharacterShowInstruction",
@@ -893,7 +893,7 @@
 			"type":"Yurowm.Dialogues.DialogueNode",
 			"ID":"32",
 			"position":"1080x260",
-			"height":"93",
+			"height":"97",
 			"instructions":{
 				{
 					"type":"Yurowm.Dialogues.CharacterShowInstruction",
@@ -920,7 +920,7 @@
 			"type":"Yurowm.Dialogues.DialogueNode",
 			"ID":"33",
 			"position":"1080x400",
-			"height":"36",
+			"height":"37",
 			"instructions":{
 				{
 					"type":"Yurowm.Dialogues.ClearInstruction"
@@ -931,7 +931,7 @@
 			"type":"YMatchThree.Core.WaitTurnNode",
 			"ID":"34",
 			"position":"860x420",
-			"height":"36",
+			"height":"37",
 			"count":"1"
 		}
 	},

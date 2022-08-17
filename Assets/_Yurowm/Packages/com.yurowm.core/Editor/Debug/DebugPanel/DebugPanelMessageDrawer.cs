@@ -176,7 +176,7 @@ namespace Yurowm.DebugTools {
             //if (args.hyperLinkData.TryGetValue("path", out var path) && 
             //    args.hyperLinkData.TryGetValue("position", out var p)
             //    && int.TryParse(p, out var position))
-                //Open(path, position);
+            //    Open(path, position);
         }
     }
 }

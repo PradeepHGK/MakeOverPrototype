@@ -13,8 +13,6 @@ MonoBehaviour:
   m_Name: Yurowm.ContentManager.AssetManager
   m_EditorClassIdentifier: 
   aItems:
-  - item: {fileID: 8299755258457058527, guid: fc4239ffc71daf844a3b9b3e4edc6dcb, type: 3}
-    path: Characters
   - item: {fileID: 8299755258457058527, guid: 4b52efcafc79ad54f940ede318d28f9b, type: 3}
     path: Characters
   - item: {fileID: 8299755258457058527, guid: 54948452f480a574e91ff69ca7ebb655, type: 3}
@@ -28,8 +26,6 @@ MonoBehaviour:
   - item: {fileID: 8299755258457058527, guid: ed8a8ba6cc7e0354a8e7a043997daea7, type: 3}
     path: Characters
   - item: {fileID: 8299755258457058527, guid: a96638751974c184fb4c04dabc6d5d3a, type: 3}
-    path: Characters
-  - item: {fileID: 7746287583578420089, guid: 646a9342cc75e274c8407a023ab25428, type: 3}
     path: Characters
   - item: {fileID: 8299755258457058527, guid: fc6b1b609cab98f45b9f80fbed1ff49a, type: 3}
     path: Characters

@@ -44,7 +44,7 @@
 			"level":{
 				"type":"YMatchThree.Core.Level",
 				"size":"7x7",
-				"gamePlay":"MatchClick",
+				"gamePlay":"MatchThree",
 				"physic":"StraightPhysic",
 				"seed":"0",
 				"layers":{
@@ -492,6 +492,108 @@
 							{
 								"type":"YMatchThree.Core.ContentInfo",
 								"ID":"DefaultChipGenerator"
+							}
+						}
+					},
+					{
+						"type":"YMatchThree.Core.SlotInfo",
+						"coordinate":"6x1",
+						"content":{
+							{
+								"type":"YMatchThree.Core.ContentInfo",
+								"ID":"Chip",
+								"info":{
+									"type":"YMatchThree.Core.ItemColorInfo",
+									"t":"0"
+								}
+							}
+						}
+					},
+					{
+						"type":"YMatchThree.Core.SlotInfo",
+						"coordinate":"6x2",
+						"content":{
+							{
+								"type":"YMatchThree.Core.ContentInfo",
+								"ID":"Chip",
+								"info":{
+									"type":"YMatchThree.Core.ItemColorInfo",
+									"t":"0"
+								}
+							}
+						}
+					},
+					{
+						"type":"YMatchThree.Core.SlotInfo",
+						"coordinate":"6x3",
+						"content":{
+							{
+								"type":"YMatchThree.Core.ContentInfo",
+								"ID":"Chip",
+								"info":{
+									"type":"YMatchThree.Core.ItemColorInfo",
+									"t":"0"
+								}
+							}
+						}
+					},
+					{
+						"type":"YMatchThree.Core.SlotInfo",
+						"coordinate":"6x4",
+						"content":{
+							{
+								"type":"YMatchThree.Core.ContentInfo",
+								"ID":"Chip",
+								"info":{
+									"type":"YMatchThree.Core.ItemColorInfo",
+									"t":"0"
+								}
+							}
+						}
+					},
+					{
+						"type":"YMatchThree.Core.SlotInfo",
+						"coordinate":"6x5",
+						"content":{
+							{
+								"type":"YMatchThree.Core.ContentInfo",
+								"ID":"Chip",
+								"info":{
+									"type":"YMatchThree.Core.ItemColorInfo",
+									"t":"0"
+								}
+							}
+						}
+					},
+					{
+						"type":"YMatchThree.Core.SlotInfo",
+						"coordinate":"6x6",
+						"content":{
+							{
+								"type":"YMatchThree.Core.ContentInfo",
+								"ID":"Chip",
+								"info":{
+									"type":"YMatchThree.Core.ItemColorInfo",
+									"t":"0"
+								}
+							},
+							{
+								"type":"YMatchThree.Core.ContentInfo",
+								"ID":"DefaultChipGenerator"
+							}
+						}
+					},
+					{
+						"type":"YMatchThree.Core.SlotInfo",
+						"coordinate":"6x0",
+						"content":{
+							{
+								"type":"YMatchThree.Core.ContentInfo",
+								"ID":"Chip",
+								"info":{
+									"type":"YMatchThree.Core.ItemColorInfo",
+									"t":"0"
+								}
 							}
 						}
 					},

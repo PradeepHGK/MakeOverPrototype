@@ -2,7 +2,7 @@
 	"type":"YMatchThree.Core.LevelScriptOrdered",
 	"order":"10",
 	"world":"TestLevels",
-	"path":"Group",
+	"path":,
 	"id":"mkl0uc6GQ6mvmq0i",
 	"name":"Jelly",
 	"stars":{
