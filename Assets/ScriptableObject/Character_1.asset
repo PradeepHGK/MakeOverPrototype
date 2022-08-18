@@ -104,27 +104,6 @@ MonoBehaviour:
         ModelPartMaterial: {fileID: 2100000, guid: 06cda9619e49de94493d08ecef378d50,
           type: 2}
         modelName: Style3
-    - type: 1
-      modelProperties:
-        modelObject: {fileID: 0}
-        modelThumbnails: {fileID: 0}
-        ModelPartMaterial: {fileID: 2100000, guid: d1c81de2e087ea94d918be65eb66430d,
-          type: 2}
-        modelName: Brown
-    - type: 1
-      modelProperties:
-        modelObject: {fileID: 0}
-        modelThumbnails: {fileID: 0}
-        ModelPartMaterial: {fileID: 2100000, guid: d1c81de2e087ea94d918be65eb66430d,
-          type: 2}
-        modelName: White
-    - type: 1
-      modelProperties:
-        modelObject: {fileID: 0}
-        modelThumbnails: {fileID: 0}
-        ModelPartMaterial: {fileID: 2100000, guid: d1c81de2e087ea94d918be65eb66430d,
-          type: 2}
-        modelName: Pink
     - type: 5
       modelProperties:
         modelObject: {fileID: 0}

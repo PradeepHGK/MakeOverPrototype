@@ -5,6 +5,9 @@ using UnityEngine.UI;
 using System;
 using System.Linq;
 using TMPro;
+using UnityEngine.SceneManagement;
+using MakeOver.Constant;
+
 public class CharacterModelController : MonoBehaviour
 {
     [Space(20)]
@@ -12,6 +15,8 @@ public class CharacterModelController : MonoBehaviour
     [SerializeField] List<Character> _charactersData;
     [SerializeField] GameObject _listParent;
     [SerializeField] GameObject _characterBtnPrefab;
+    [SerializeField] GameObject _Successpopup;
+
 
     [Space]
     [Header("Scroll List")]
@@ -23,11 +28,14 @@ public class CharacterModelController : MonoBehaviour
     [SerializeField] private GameObject _currentCharacterModel;
 
     [SerializeField] Button backButton;
+    [SerializeField] Button DoneButton;
+
 
 
     private void Start()
     {
         LoadCharacterData();
+        DoneButton.onClick.AddListener(LoadTaleScene);
     }
 
     void LoadCharacterData()
@@ -37,15 +45,16 @@ public class CharacterModelController : MonoBehaviour
             var characterBtn = Instantiate(_characterBtnPrefab, _listParent.transform).GetComponent<Button>();
             characterBtn.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = item.ToString();
 
-            characterBtn.onClick.AddListener(() =>
-            {
-                _currentCharacterModel = Instantiate(item.GirlModel);
+            _currentCharacterModel = Instantiate(item.GirlModel);
+            _currentCharacterSelected = item;
+            //characterBtn.onClick.AddListener(() =>
+            //{
 
-                _currentCharacterSelected = item;
-                LoadCategoryData();
-                _characterBtnList.SetActive(false);
-            });
+            //    //LoadCategoryData();
+            //    _characterBtnList.SetActive(false);
+            //});
         }
+        LoadAssetData();
     }
 
     void LoadCategoryData()
@@ -62,20 +71,28 @@ public class CharacterModelController : MonoBehaviour
                 catebtn.onClick.AddListener(() =>
                 {
                     _categoriesBtnList.SetActive(false);
-                    LoadAssetData((ModelPropertyType)item);
+                    //LoadAssetData((ModelPropertyType)item);
                     backButton.gameObject.SetActive(true);
                 });
             }
         }
     }
 
-    void LoadAssetData(ModelPropertyType type)
+    void LoadAssetData()
     {
         _assetBtnList.SetActive(true);
 
-        foreach (var item in _currentCharacterSelected.modelProperties.categories)
+        var randomAsset = new List<Category>();
+        var rand = new System.Random();
+
+        for (int i = 0; i < 3; i++)
         {
-            if (item.type == type)
+            var index = rand.Next(_currentCharacterSelected.modelProperties.categories.Count);
+            randomAsset.Add(_currentCharacterSelected.modelProperties.categories.ElementAt(index));
+        }
+
+        foreach (var item in randomAsset)
+        {
             {
                 var assetBtn = Instantiate(_characterBtnPrefab, _assetBtnList.transform.GetChild(0).transform).GetComponent<Button>();
                 assetBtn.gameObject.name = item.modelProperties.modelName;
@@ -125,6 +142,8 @@ public class CharacterModelController : MonoBehaviour
                 default:
                     break;
             }
+
+            Invoke("ShowPopup", 0.5f);
         }
 
         //Local Function
@@ -135,5 +154,15 @@ public class CharacterModelController : MonoBehaviour
             matArray[index] = materialToUpdate;
             part.GetComponent<SkinnedMeshRenderer>().sharedMaterials = matArray;
         }
+    }
+
+    void LoadTaleScene()
+    {
+        SceneManager.LoadScene(Constants.CandySceneName);
+    }
+
+    void ShowPopup()
+    {
+        _Successpopup.SetActive(true);
     }
 }
