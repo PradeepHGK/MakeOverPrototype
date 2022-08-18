@@ -17,6 +17,10 @@ public class CharacterModelController : MonoBehaviour
         foreach (var item in _charactersData)
         {
             Debug.Log(item.name);
+            foreach (var data in item.modelProperties.categories)
+            {
+                Debug.Log(data.type);
+            }
         }
     }
 }
