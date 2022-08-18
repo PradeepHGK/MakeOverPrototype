@@ -9,6 +9,7 @@ public class Character : ScriptableObject
     //public List<MaterialsProperties> materialsProperties;
     //public List<TextureProperties> textureProperties;
     public CharacterSOData modelProperties;
+
 }
 
 [System.Serializable]

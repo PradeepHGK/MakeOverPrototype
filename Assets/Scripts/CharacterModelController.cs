@@ -32,8 +32,6 @@ public class CharacterModelController : MonoBehaviour
     {
         foreach (var item in _charactersData)
         {
-
-            Debug.Log(item.name);
             var characterBtn = Instantiate(_characterBtnPrefab, _listParent.transform).GetComponent<Button>();
             characterBtn.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = item.ToString();
 
@@ -47,7 +45,6 @@ public class CharacterModelController : MonoBehaviour
             });
         }
     }
-
 
     void LoadCategoryData()
     {

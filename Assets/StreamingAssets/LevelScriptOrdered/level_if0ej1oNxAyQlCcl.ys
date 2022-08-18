@@ -29,7 +29,7 @@
 		{
 			"type":"YMatchThree.Core.LevelStartNode",
 			"ID":"0",
-			"position":"0x0",
+			"position":"0x-40",
 			"height":"17"
 		},
 		{
@@ -600,7 +600,7 @@
 		}
 	},
 	"connections":{
-		"(0, 0)-(1, 0)",
-		"(1, 1)-(2, 0)"
+		"(1, 1)-(2, 0)",
+		"(0, 0)-(1, 0)"
 	}
 }

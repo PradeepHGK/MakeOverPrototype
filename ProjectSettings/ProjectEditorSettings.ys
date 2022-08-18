@@ -1,7 +1,7 @@
  {
 	"type":"Yurowm.Utilities.EditorStorage",
 	"strings":{
-		"dashboard.lastEditor":"UI/Localization",
+		"dashboard.lastEditor":"Content/Levels",
 		"leveleditor.lastLevelID":"luIFYEC1V3opNM74"
 	},
 	"bools":{
@@ -17,7 +17,10 @@
 		"storageFilter_Offers.ys":"0",
 		"storageFilter_Sounds.ys":"0",
 		"storageFilter_Store.ys":"0",
-		"storageFilter_UserPath.ys":"0"
+		"storageFilter_UserPath.ys":"0",
+		"storageFilter_LevelMaps.ys":"0",
+		"storageFilter_Integrations.ys":"0",
+		"storageFilter_UIColor.ys":"0"
 	},
 	"serializables":{
 		
