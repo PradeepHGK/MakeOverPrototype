@@ -371,6 +371,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1657762517857643249, guid: d37a2a0bd80e84523bf3cec0e8c8ce84,
+        type: 3}
+      propertyPath: m_Padding.m_Bottom
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4276846604647881944, guid: d37a2a0bd80e84523bf3cec0e8c8ce84,
+        type: 3}
+      propertyPath: m_Padding.m_Bottom
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 4474181494336141819, guid: d37a2a0bd80e84523bf3cec0e8c8ce84,
         type: 3}
       propertyPath: m_IsActive
@@ -395,6 +405,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8056148757855234200, guid: d37a2a0bd80e84523bf3cec0e8c8ce84,
+        type: 3}
+      propertyPath: m_Padding.m_Bottom
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8056148757855234201, guid: d37a2a0bd80e84523bf3cec0e8c8ce84,
         type: 3}

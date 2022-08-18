@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 using System.Linq;
-
+using TMPro;
 public class CharacterModelController : MonoBehaviour
 {
     [Space(20)]
@@ -35,6 +35,8 @@ public class CharacterModelController : MonoBehaviour
 
             Debug.Log(item.name);
             var characterBtn = Instantiate(_characterBtnPrefab, _listParent.transform).GetComponent<Button>();
+            characterBtn.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = item.ToString();
+
             characterBtn.onClick.AddListener(() =>
             {
                 _currentCharacterModel = Instantiate(item.GirlModel);
@@ -57,6 +59,7 @@ public class CharacterModelController : MonoBehaviour
                 _categoriesBtnList.SetActive(true);
                 var catebtn = Instantiate(_characterBtnPrefab, _categoriesBtnList.transform.GetChild(0).transform).GetComponent<Button>();
                 catebtn.gameObject.name = item.ToString();
+                catebtn.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = item.ToString();
                 catebtn.onClick.AddListener(() =>
                 {
                     _categoriesBtnList.SetActive(false);
@@ -76,6 +79,8 @@ public class CharacterModelController : MonoBehaviour
             {
                 var assetBtn = Instantiate(_characterBtnPrefab, _assetBtnList.transform.GetChild(0).transform).GetComponent<Button>();
                 assetBtn.gameObject.name = item.modelProperties.modelName;
+                assetBtn.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = item.modelProperties.modelName;
+
                 assetBtn.onClick.AddListener(()=> LoadAssetOnCharacter(item));
             }
         }
@@ -122,6 +127,7 @@ public class CharacterModelController : MonoBehaviour
             }
         }
 
+        //Local Function
         void UpdateSharedMaterialArray(GameObject part, int index, Material materialToUpdate)
         {
             var rend = part.GetComponent<SkinnedMeshRenderer>();
