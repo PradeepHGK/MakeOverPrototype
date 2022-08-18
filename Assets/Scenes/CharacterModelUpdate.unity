@@ -307,6 +307,17 @@ PrefabInstance:
       propertyPath: _categoriesBtnList
       value: 
       objectReference: {fileID: 8056148759022696043}
+    - target: {fileID: 2377517430784658273, guid: 76f1b19005c7549e8b7bebc971884214,
+        type: 3}
+      propertyPath: _currentCharacterModel
+      value: 
+      objectReference: {fileID: 8056148759022696042}
+    - target: {fileID: 2377517430784658273, guid: 76f1b19005c7549e8b7bebc971884214,
+        type: 3}
+      propertyPath: _currentCharacterSelected
+      value: 
+      objectReference: {fileID: 11400000, guid: 2767f77883ce749f9949c71f7676bb0b,
+        type: 2}
     - target: {fileID: 2377517430784658274, guid: 76f1b19005c7549e8b7bebc971884214,
         type: 3}
       propertyPath: m_RootOrder

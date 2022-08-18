@@ -125,3 +125,24 @@ MonoBehaviour:
         ModelPartMaterial: {fileID: 2100000, guid: d1c81de2e087ea94d918be65eb66430d,
           type: 2}
         modelName: Pink
+    - type: 5
+      modelProperties:
+        modelObject: {fileID: 0}
+        modelThumbnails: {fileID: 0}
+        ModelPartMaterial: {fileID: 2100000, guid: 982a52d682f0ef44eaffa42aaa9febb8,
+          type: 2}
+        modelName: Purple
+    - type: 5
+      modelProperties:
+        modelObject: {fileID: 0}
+        modelThumbnails: {fileID: 0}
+        ModelPartMaterial: {fileID: 2100000, guid: eb4fd4cad618f2f409d43f13ba30fcd8,
+          type: 2}
+        modelName: Gray
+    - type: 5
+      modelProperties:
+        modelObject: {fileID: 0}
+        modelThumbnails: {fileID: 0}
+        ModelPartMaterial: {fileID: 2100000, guid: cdb1eb74bb510c04c8d7d4635be24571,
+          type: 2}
+        modelName: Green
