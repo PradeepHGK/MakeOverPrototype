@@ -46,9 +46,9 @@ public class Category
 [System.Serializable]
 public class CharacterSOData
 {
+    public string CharacterName;
     public Transform modelPositionTransform;
     public Texture2D CharacterThumbnail;
-    //public Vector3 modelInstantiationPosition;
     public List<Category> categories;
 }
 

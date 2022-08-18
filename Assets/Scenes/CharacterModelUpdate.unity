@@ -218,7 +218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4399acc9487d2482e870c6dc6524cbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _characterScriptableObject:
+  _charactersData:
   - {fileID: 11400000, guid: 2767f77883ce749f9949c71f7676bb0b, type: 2}
 --- !u!4 &993080254
 Transform:
@@ -324,6 +324,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8056148757855234201, guid: d37a2a0bd80e84523bf3cec0e8c8ce84,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8056148758661747993, guid: d37a2a0bd80e84523bf3cec0e8c8ce84,
         type: 3}
       propertyPath: m_Name

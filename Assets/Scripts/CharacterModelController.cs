@@ -4,17 +4,19 @@ using UnityEngine;
 
 public class CharacterModelController : MonoBehaviour
 {
-    [SerializeField] List<Character> _characterScriptableObject; 
+    [SerializeField] List<Character> _charactersData;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-
+        LoadCharacterData();
     }
 
-    // Update is called once per frame
-    void Update()
+
+    void LoadCharacterData()
     {
-        
+        foreach (var item in _charactersData)
+        {
+            Debug.Log(item.name);
+        }
     }
 }
