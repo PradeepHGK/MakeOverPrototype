@@ -22,6 +22,8 @@ public class CharacterModelController : MonoBehaviour
     [SerializeField] private Character _currentCharacterSelected;
     [SerializeField] private GameObject _currentCharacterModel;
 
+    [SerializeField] Button backButton;
+
 
     private void Start()
     {
@@ -61,6 +63,7 @@ public class CharacterModelController : MonoBehaviour
                 {
                     _categoriesBtnList.SetActive(false);
                     LoadAssetData((ModelPropertyType)item);
+                    backButton.gameObject.SetActive(true);
                 });
             }
         }
