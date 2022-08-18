@@ -26,42 +26,42 @@ MonoBehaviour:
         modelThumbnails: {fileID: 0}
         ModelPartMaterial: {fileID: 2100000, guid: 1d20fe0a8b539ed4a841fc6639f10884,
           type: 2}
-        modelName: Black
+        modelName: Black Hair
     - type: 0
       modelProperties:
         modelObject: {fileID: 0}
         modelThumbnails: {fileID: 0}
         ModelPartMaterial: {fileID: 2100000, guid: 608ce43b62a38244a9b99528272936ac,
           type: 2}
-        modelName: Red
+        modelName: Red Hair
     - type: 0
       modelProperties:
         modelObject: {fileID: 0}
         modelThumbnails: {fileID: 0}
         ModelPartMaterial: {fileID: 2100000, guid: 84903368a9d43f1439640f81b411565a,
           type: 2}
-        modelName: Brown
+        modelName: Brown Hair
     - type: 3
       modelProperties:
         modelObject: {fileID: 0}
         modelThumbnails: {fileID: 0}
         ModelPartMaterial: {fileID: 2100000, guid: 287362fd0f2611f4f91584128aa37fdd,
           type: 2}
-        modelName: Brown
+        modelName: Brown Shoe
     - type: 3
       modelProperties:
         modelObject: {fileID: 0}
         modelThumbnails: {fileID: 0}
         ModelPartMaterial: {fileID: 2100000, guid: 755af908fea8d6041be8d9702950f4a3,
           type: 2}
-        modelName: Blue
+        modelName: Blue Shoe
     - type: 3
       modelProperties:
         modelObject: {fileID: 0}
         modelThumbnails: {fileID: 0}
         ModelPartMaterial: {fileID: 2100000, guid: abbf0fcc92b284b468ef89adffa0fbe0,
           type: 2}
-        modelName: Black
+        modelName: Black Shoe
     - type: 4
       modelProperties:
         modelObject: {fileID: 0}

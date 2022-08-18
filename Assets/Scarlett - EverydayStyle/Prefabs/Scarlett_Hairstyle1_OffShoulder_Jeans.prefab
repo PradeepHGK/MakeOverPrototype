@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1416389997182762360}
   m_Layer: 0
   m_Name: OffShoulder_Jeans
-  m_TagString: Cloth
+  m_TagString: Jeans
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

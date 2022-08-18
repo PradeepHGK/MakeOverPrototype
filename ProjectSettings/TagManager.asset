@@ -8,6 +8,8 @@ TagManager:
   - Hair
   - Cloth
   - Shoes
+  - Jeans
+  - FaceStyle
   layers:
   - Default
   - TransparentFX

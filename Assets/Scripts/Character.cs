@@ -55,5 +55,5 @@ public class CharacterSOData
 
 public enum ModelPropertyType
 {
-    Hair, Body, FaceStyle, Shoes, Jeans, 
+    Hair, Body, FaceStyle, Shoes, Jeans, OffShoulder
 }

@@ -50,16 +50,19 @@ public class CharacterModelController : MonoBehaviour
     void LoadCategoryData()
     {
         var typeList = Enum.GetValues(typeof(ModelPropertyType));
-        foreach (var item in typeList)
+        foreach (ModelPropertyType item in typeList)
         {
-            _categoriesBtnList.SetActive(true);
-            var catebtn = Instantiate(_characterBtnPrefab, _categoriesBtnList.transform.GetChild(0).transform).GetComponent<Button>();
-            catebtn.gameObject.name = item.ToString();
-            catebtn.onClick.AddListener(() =>
+            if (item != ModelPropertyType.Body)
             {
-                _categoriesBtnList.SetActive(false);
-                LoadAssetData((ModelPropertyType)item);
-            });
+                _categoriesBtnList.SetActive(true);
+                var catebtn = Instantiate(_characterBtnPrefab, _categoriesBtnList.transform.GetChild(0).transform).GetComponent<Button>();
+                catebtn.gameObject.name = item.ToString();
+                catebtn.onClick.AddListener(() =>
+                {
+                    _categoriesBtnList.SetActive(false);
+                    LoadAssetData((ModelPropertyType)item);
+                });
+            }
         }
     }
 
@@ -73,13 +76,58 @@ public class CharacterModelController : MonoBehaviour
             {
                 var assetBtn = Instantiate(_characterBtnPrefab, _assetBtnList.transform.GetChild(0).transform).GetComponent<Button>();
                 assetBtn.gameObject.name = item.modelProperties.modelName;
-                assetBtn.onClick.AddListener(LoadAssetOnCharacter);
+                assetBtn.onClick.AddListener(()=> LoadAssetOnCharacter(item));
             }
         }
     }
 
-    void LoadAssetOnCharacter()
+    void LoadAssetOnCharacter(Category category)
     {
+        foreach (Transform bodyParts in _currentCharacterModel.transform)
+        {
+            switch (category.type)
+            {
+                case ModelPropertyType.Jeans:
+                    if (bodyParts.CompareTag("Jeans"))
+                    {
+                        UpdateSharedMaterialArray(bodyParts.gameObject, 0, category.modelProperties.ModelPartMaterial);
+                    }
+                    break;
+                case ModelPropertyType.FaceStyle:
+                    if (bodyParts.CompareTag("Jeans"))
+                    {
+                        UpdateSharedMaterialArray(bodyParts.gameObject, 3, category.modelProperties.ModelPartMaterial);
+                    }
+                    break;
+                case ModelPropertyType.Hair:
+                    if (bodyParts.CompareTag("Hair"))
+                    {
+                        bodyParts.GetComponent<SkinnedMeshRenderer>().material = category.modelProperties.ModelPartMaterial;
+                    }
+                    break;
+                case ModelPropertyType.Shoes:
+                    if (bodyParts.CompareTag("Shoes"))
+                    {
+                        bodyParts.GetComponent<SkinnedMeshRenderer>().material = category.modelProperties.ModelPartMaterial;
+                    }
+                    break;
+                case ModelPropertyType.OffShoulder:
+                    if (bodyParts.CompareTag("Jeans"))
+                    {
+                        UpdateSharedMaterialArray(bodyParts.gameObject, 1, category.modelProperties.ModelPartMaterial);
+                    }
+                    break;
+                default:
+                    break;
+            }
+        }
 
+        void UpdateSharedMaterialArray(GameObject part, int index, Material materialToUpdate)
+        {
+            var rend = part.GetComponent<SkinnedMeshRenderer>();
+            var matArray = rend.sharedMaterials;
+            matArray[index] = materialToUpdate;
+            part.GetComponent<SkinnedMeshRenderer>().sharedMaterials = matArray;
+        }
     }
 }

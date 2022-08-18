@@ -1,13 +1,23 @@
  {
 	"type":"Yurowm.Utilities.EditorStorage",
 	"strings":{
-		"dashboard.lastEditor":"Content/Assets"
+		"dashboard.lastEditor":"UI/Localization",
+		"leveleditor.lastLevelID":"luIFYEC1V3opNM74"
 	},
 	"bools":{
-		"editorTipsEnabled":"0"
+		"editorTipsEnabled":"0",
+		"leveleditor.list.visible":"1"
 	},
 	"numbers":{
-		
+		"storageFilter_Optimization.ys":"0",
+		"storageFilter_EditorTips.ys":"0",
+		"storageFilter_Localization":"0",
+		"storageFilter_Pages.ys":"0",
+		"storageFilter_LevelContent.ys":"0",
+		"storageFilter_Offers.ys":"0",
+		"storageFilter_Sounds.ys":"0",
+		"storageFilter_Store.ys":"0",
+		"storageFilter_UserPath.ys":"0"
 	},
 	"serializables":{
 		
