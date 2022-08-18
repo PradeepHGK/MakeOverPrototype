@@ -15,6 +15,7 @@ MonoBehaviour:
   GirlModel: {fileID: 1544083715724397638, guid: f4c22d30e422f7244a38f2cdb8e20594,
     type: 3}
   modelProperties:
+    CharacterName: 
     modelPositionTransform: {fileID: 0}
     CharacterThumbnail: {fileID: 2800000, guid: 5aa25a20f2a564999bb6a74ec53767e1,
       type: 3}
@@ -23,5 +24,104 @@ MonoBehaviour:
       modelProperties:
         modelObject: {fileID: 0}
         modelThumbnails: {fileID: 0}
-        ModelPartMaterial: {fileID: 0}
-        modelName: 
+        ModelPartMaterial: {fileID: 2100000, guid: 1d20fe0a8b539ed4a841fc6639f10884,
+          type: 2}
+        modelName: Black
+    - type: 0
+      modelProperties:
+        modelObject: {fileID: 0}
+        modelThumbnails: {fileID: 0}
+        ModelPartMaterial: {fileID: 2100000, guid: 608ce43b62a38244a9b99528272936ac,
+          type: 2}
+        modelName: Red
+    - type: 0
+      modelProperties:
+        modelObject: {fileID: 0}
+        modelThumbnails: {fileID: 0}
+        ModelPartMaterial: {fileID: 2100000, guid: 84903368a9d43f1439640f81b411565a,
+          type: 2}
+        modelName: Brown
+    - type: 3
+      modelProperties:
+        modelObject: {fileID: 0}
+        modelThumbnails: {fileID: 0}
+        ModelPartMaterial: {fileID: 2100000, guid: 287362fd0f2611f4f91584128aa37fdd,
+          type: 2}
+        modelName: Brown
+    - type: 3
+      modelProperties:
+        modelObject: {fileID: 0}
+        modelThumbnails: {fileID: 0}
+        ModelPartMaterial: {fileID: 2100000, guid: 755af908fea8d6041be8d9702950f4a3,
+          type: 2}
+        modelName: Blue
+    - type: 3
+      modelProperties:
+        modelObject: {fileID: 0}
+        modelThumbnails: {fileID: 0}
+        ModelPartMaterial: {fileID: 2100000, guid: abbf0fcc92b284b468ef89adffa0fbe0,
+          type: 2}
+        modelName: Black
+    - type: 4
+      modelProperties:
+        modelObject: {fileID: 0}
+        modelThumbnails: {fileID: 0}
+        ModelPartMaterial: {fileID: 2100000, guid: d9ea33e92d12dad4a9fbdaff2844afc1,
+          type: 2}
+        modelName: Black
+    - type: 4
+      modelProperties:
+        modelObject: {fileID: 0}
+        modelThumbnails: {fileID: 0}
+        ModelPartMaterial: {fileID: 2100000, guid: 818bbf5b3becf7b4b84647c73d6d39dc,
+          type: 2}
+        modelName: DarkBlue
+    - type: 4
+      modelProperties:
+        modelObject: {fileID: 0}
+        modelThumbnails: {fileID: 0}
+        ModelPartMaterial: {fileID: 2100000, guid: dbcc1b200306bf34ebae2f0adf9e82ec,
+          type: 2}
+        modelName: White
+    - type: 2
+      modelProperties:
+        modelObject: {fileID: 0}
+        modelThumbnails: {fileID: 0}
+        ModelPartMaterial: {fileID: 2100000, guid: 05b3e08c8718cec439a9d35b28aa6636,
+          type: 2}
+        modelName: Style1
+    - type: 2
+      modelProperties:
+        modelObject: {fileID: 0}
+        modelThumbnails: {fileID: 0}
+        ModelPartMaterial: {fileID: 2100000, guid: 93aacd75fbcb94a44999b1050ed538a3,
+          type: 2}
+        modelName: Style2
+    - type: 2
+      modelProperties:
+        modelObject: {fileID: 0}
+        modelThumbnails: {fileID: 0}
+        ModelPartMaterial: {fileID: 2100000, guid: 06cda9619e49de94493d08ecef378d50,
+          type: 2}
+        modelName: Style3
+    - type: 1
+      modelProperties:
+        modelObject: {fileID: 0}
+        modelThumbnails: {fileID: 0}
+        ModelPartMaterial: {fileID: 2100000, guid: d1c81de2e087ea94d918be65eb66430d,
+          type: 2}
+        modelName: Brown
+    - type: 1
+      modelProperties:
+        modelObject: {fileID: 0}
+        modelThumbnails: {fileID: 0}
+        ModelPartMaterial: {fileID: 2100000, guid: d1c81de2e087ea94d918be65eb66430d,
+          type: 2}
+        modelName: White
+    - type: 1
+      modelProperties:
+        modelObject: {fileID: 0}
+        modelThumbnails: {fileID: 0}
+        ModelPartMaterial: {fileID: 2100000, guid: d1c81de2e087ea94d918be65eb66430d,
+          type: 2}
+        modelName: Pink

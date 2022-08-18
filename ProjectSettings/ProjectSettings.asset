@@ -794,6 +794,7 @@ PlayerSettings:
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
     0: MXPARSER;UNITY_ADS;UNITY_IAP;UNITY_IAP_OBFUSCATION
+    1: MXPARSER;PHYSICS_2D;PHYSICS_3D;UNITY_ADS;UNITY_IAP
     7: MXPARSER;PHYSICS_2D;PHYSICS_3D;UNITY_ADS;UNITY_IAP;UNITY_IAP_OBFUSCATION
   additionalCompilerArguments: {}
   platformArchitecture: {}
