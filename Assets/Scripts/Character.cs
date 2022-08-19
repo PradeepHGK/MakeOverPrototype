@@ -33,7 +33,6 @@ public class ModelProperties
 {
     public GameObject modelObject;
     public Sprite modelThumbnails;
-    public Texture2D ModelThumbnails;
     public Material ModelPartMaterial;
     public string modelName;
 }
@@ -43,7 +42,6 @@ public class Category
 {
     public ModelPropertyType type;
     public ModelProperties modelProperties;
-    public Texture2D ModelThumbnails;
 }
 
 [System.Serializable]
