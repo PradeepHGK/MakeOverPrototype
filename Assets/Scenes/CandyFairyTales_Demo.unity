@@ -293,7 +293,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   contextTag:
     ID: 
-    registerOnLaunch: 1
+    registerOnLaunch: 0
   planeDistance: 20
 --- !u!4 &385
 Transform:
