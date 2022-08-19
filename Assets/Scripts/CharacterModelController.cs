@@ -10,12 +10,15 @@ using MakeOver.Constant;
 
 public class CharacterModelController : MonoBehaviour
 {
+    public static CharacterModelController Instance;
+
     [Space(20)]
 
     [SerializeField] List<Character> _charactersData;
     [SerializeField] GameObject _listParent;
     [SerializeField] GameObject _characterBtnPrefab;
     [SerializeField] GameObject _Successpopup;
+    [SerializeField] GameObject _BGpanel;
 
 
     [Space]
@@ -29,16 +32,41 @@ public class CharacterModelController : MonoBehaviour
 
     [SerializeField] Button backButton;
     [SerializeField] Button DoneButton;
+    private GameObject UICameraObject;
+    [SerializeField] private GameObject mapSpaceObject;
+
+    [SerializeField] private Camera CharacterCamera;
 
 
+    private void Awake()
+    {
+        if (Instance == null)
+            Instance = this;
+    }
 
     private void Start()
     {
-        LoadCharacterData();
-        DoneButton.onClick.AddListener(LoadTaleScene);
+        //LoadCharacterData();
+        DoneButton.onClick.AddListener(OnClickDoneBtn);
+
+        if (mapSpaceObject == null)
+        {
+            InvokeRepeating("CallMap", 2f, 5);
+        }
     }
 
-    void LoadCharacterData()
+    void CallMap()
+    {
+        if (mapSpaceObject == null)
+            StartCoroutine(DisabledObject());
+    }
+
+    void DisabledMap()
+    {
+        if (mapSpaceObject != null) mapSpaceObject.SetActive(false);
+    }
+
+    public void LoadCharacterData()
     {
         foreach (var item in _charactersData)
         {
@@ -46,13 +74,9 @@ public class CharacterModelController : MonoBehaviour
             characterBtn.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = item.ToString();
 
             _currentCharacterModel = Instantiate(item.GirlModel);
-            _currentCharacterSelected = item;
-            //characterBtn.onClick.AddListener(() =>
-            //{
+            _currentCharacterModel.transform.localEulerAngles = new Vector3(0, 180, 0);
 
-            //    //LoadCategoryData();
-            //    _characterBtnList.SetActive(false);
-            //});
+            _currentCharacterSelected = item;
         }
         LoadAssetData();
     }
@@ -78,9 +102,29 @@ public class CharacterModelController : MonoBehaviour
         }
     }
 
+
+    int i = 2;
     void LoadAssetData()
     {
+        UICameraObject = GameObject.Find($"ROOT: PuzzleSpace ({i})");
+
+        if (UICameraObject != null)
+        {
+            UICameraObject.SetActive(false);
+        }
+        else
+        {
+            i++;
+            UICameraObject = GameObject.Find($"ROOT: PuzzleSpace ({i})");
+            UICameraObject.SetActive(false);
+        }
+
+
+        _BGpanel.SetActive(true);
         _assetBtnList.SetActive(true);
+        CharacterCamera.gameObject.SetActive(true);
+
+        //StartCoroutine(DisabledObject());
 
         var randomAsset = new List<Category>();
         var rand = new System.Random();
@@ -98,9 +142,17 @@ public class CharacterModelController : MonoBehaviour
                 assetBtn.gameObject.name = item.modelProperties.modelName;
                 assetBtn.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = item.modelProperties.modelName;
                 assetBtn.transform.GetChild(0).GetComponent<Image>().sprite = item.modelProperties.modelThumbnails;
-                assetBtn.onClick.AddListener(()=> LoadAssetOnCharacter(item));
+                assetBtn.onClick.AddListener(() => LoadAssetOnCharacter(item));
             }
+
+            InvokeRepeating("DisabledMap", 1, 2);
         }
+    }
+
+    IEnumerator DisabledObject()
+    {
+        yield return new WaitForSeconds(2);
+        mapSpaceObject = FindInActiveObjectByName("ROOT: LevelMapSpace (1)");
     }
 
     void LoadAssetOnCharacter(Category category)
@@ -143,7 +195,10 @@ public class CharacterModelController : MonoBehaviour
                     break;
             }
 
+            StartCoroutine(DisabledObject());
             Invoke("ShowPopup", 0.5f);
+
+            CancelInvoke("DisabledMap");
         }
 
         //Local Function
@@ -156,13 +211,40 @@ public class CharacterModelController : MonoBehaviour
         }
     }
 
-    void LoadTaleScene()
+    void OnClickDoneBtn()
     {
-        SceneManager.LoadScene(Constants.CandySceneName);
+        //SceneManager.LoadScene(Constants.CandySceneName);
+        _BGpanel.SetActive(false);
+        _Successpopup.SetActive(false);
+        CharacterCamera.gameObject.SetActive(false);
+
+        if (UICameraObject != null)
+            UICameraObject.SetActive(true);
+
+        if (mapSpaceObject != null)
+            mapSpaceObject.SetActive(true);
+        else
+            Debug.Log("null");
     }
 
     void ShowPopup()
     {
         _Successpopup.SetActive(true);
+    }
+
+    GameObject FindInActiveObjectByName(string name)
+    {
+        Transform[] objs = Resources.FindObjectsOfTypeAll<Transform>() as Transform[];
+        for (int i = 0; i < objs.Length; i++)
+        {
+            if (objs[i].hideFlags == HideFlags.None)
+            {
+                if (objs[i].name == name)
+                {
+                    return objs[i].gameObject;
+                }
+            }
+        }
+        return null;
     }
 }

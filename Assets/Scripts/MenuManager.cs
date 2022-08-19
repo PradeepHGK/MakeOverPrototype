@@ -30,7 +30,9 @@ namespace MakeOver.UI
 
         public void OnClickLevelCompleteButton()
         {
-            SceneManager.LoadScene(Constants.CharacterScene);
+            CharacterModelController.Instance.LoadCharacterData();
+            //Camera.main.gameObject.SetActive(false);
+            //SceneManager.LoadScene(Constants.CharacterScene);
         }
     }
 }

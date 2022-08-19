@@ -158,10 +158,10 @@ PlayerSettings:
     iPhone: com.yurowm.candyfairytales
   buildNumber:
     Standalone: 0
-    iPhone: 85
+    iPhone: 87
     tvOS: 0
   overrideDefaultApplicationIdentifier: 1
-  AndroidBundleVersionCode: 85
+  AndroidBundleVersionCode: 87
   AndroidMinSdkVersion: 22
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1

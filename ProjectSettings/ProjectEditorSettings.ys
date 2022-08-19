@@ -1,7 +1,7 @@
  {
 	"type":"Yurowm.Utilities.EditorStorage",
 	"strings":{
-		"dashboard.lastEditor":"Content/Level Maps",
+		"dashboard.lastEditor":"Content/Sounds",
 		"leveleditor.lastLevelID":"luIFYEC1V3opNM74"
 	},
 	"bools":{
