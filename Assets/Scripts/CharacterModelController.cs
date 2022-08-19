@@ -97,8 +97,7 @@ public class CharacterModelController : MonoBehaviour
                 var assetBtn = Instantiate(_characterBtnPrefab, _assetBtnList.transform.GetChild(0).transform).GetComponent<Button>();
                 assetBtn.gameObject.name = item.modelProperties.modelName;
                 assetBtn.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = item.modelProperties.modelName;
-                //assetBtn.transform.GetChild(1).GetComponent<Image>().sprite = 
-
+                assetBtn.transform.GetChild(1).GetComponent<Image>().sprite = item.modelProperties.modelThumbnails;
                 assetBtn.onClick.AddListener(()=> LoadAssetOnCharacter(item));
             }
         }

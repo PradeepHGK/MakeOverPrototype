@@ -23,8 +23,7 @@ MonoBehaviour:
     - type: 0
       modelProperties:
         modelObject: {fileID: 0}
-        modelThumbnails: {fileID: 2800000, guid: b5f0af6c16e38cb47b79d8c5736bcc9f,
-          type: 3}
+        modelThumbnails: {fileID: 0}
         ModelPartMaterial: {fileID: 2100000, guid: 1d20fe0a8b539ed4a841fc6639f10884,
           type: 2}
         modelName: Black Hair
