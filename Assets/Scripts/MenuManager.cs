@@ -14,7 +14,7 @@ namespace MakeOver.UI
         // Start is called before the first frame update
         void Start()
         {
-            _startButton.onClick.AddListener(OnClickStartButton);
+            //_startButton.onClick.AddListener(OnClickStartButton);
         }
 
         // Update is called once per frame
@@ -26,6 +26,11 @@ namespace MakeOver.UI
         void OnClickStartButton()
         {
             SceneManager.LoadScene(Constants.CandySceneName);
+        }
+
+        public void OnClickLevelCompleteButton()
+        {
+            SceneManager.LoadScene(Constants.CharacterScene);
         }
     }
 }
