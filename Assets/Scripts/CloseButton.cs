@@ -36,6 +36,6 @@ public class CloseButton : MonoBehaviour
     
             OpenCategoriesList();
         }
-        backButton.gameObject.SetActive(false);
+        backButton.gameObject.SetActive(true);
     }
 }

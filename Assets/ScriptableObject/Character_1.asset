@@ -95,21 +95,24 @@ MonoBehaviour:
     - type: 2
       modelProperties:
         modelObject: {fileID: 0}
-        modelThumbnails: {fileID: 0}
+        modelThumbnails: {fileID: 2800000, guid: b526fc035fc458c4dbac09abd7f40b00,
+          type: 3}
         ModelPartMaterial: {fileID: 2100000, guid: 05b3e08c8718cec439a9d35b28aa6636,
           type: 2}
         modelName: Style1
     - type: 2
       modelProperties:
         modelObject: {fileID: 0}
-        modelThumbnails: {fileID: 0}
+        modelThumbnails: {fileID: 2800000, guid: c4bb5a37bc2ba364f8b9d75529966ed6,
+          type: 3}
         ModelPartMaterial: {fileID: 2100000, guid: 93aacd75fbcb94a44999b1050ed538a3,
           type: 2}
         modelName: Style2
     - type: 2
       modelProperties:
         modelObject: {fileID: 0}
-        modelThumbnails: {fileID: 0}
+        modelThumbnails: {fileID: 2800000, guid: c9b49e2ec0974be4186fde9558ba5a8a,
+          type: 3}
         ModelPartMaterial: {fileID: 2100000, guid: 06cda9619e49de94493d08ecef378d50,
           type: 2}
         modelName: Style3
