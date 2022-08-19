@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2377517430784658274}
   - component: {fileID: 2377517430784658273}
+  - component: {fileID: 3210239795271344453}
   m_Layer: 0
   m_Name: CharacterModelController
   m_TagString: Untagged
@@ -48,3 +49,24 @@ MonoBehaviour:
   _listParent: {fileID: 0}
   _characterBtnPrefab: {fileID: 2448937978993299066, guid: 16000d33b6d3240ccb7a996b42991000,
     type: 3}
+  _Successpopup: {fileID: 0}
+  _characterBtnList: {fileID: 0}
+  _categoriesBtnList: {fileID: 0}
+  _assetBtnList: {fileID: 0}
+  _currentCharacterSelected: {fileID: 0}
+  _currentCharacterModel: {fileID: 0}
+  backButton: {fileID: 0}
+  DoneButton: {fileID: 0}
+--- !u!65 &3210239795271344453
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2377517430784658272}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
