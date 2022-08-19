@@ -32,7 +32,7 @@ public class TextureProperties
 public class ModelProperties
 {
     public GameObject modelObject;
-    public Texture2D modelThumbnails;
+    public Sprite modelThumbnails;
     public Material ModelPartMaterial;
     public string modelName;
 }
