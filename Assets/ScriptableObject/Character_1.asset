@@ -23,120 +23,134 @@ MonoBehaviour:
     - type: 0
       modelProperties:
         modelObject: {fileID: 0}
-        modelThumbnails: {fileID: 2800000, guid: b5f0af6c16e38cb47b79d8c5736bcc9f,
+        ModelThumbnails: {fileID: 2800000, guid: b5f0af6c16e38cb47b79d8c5736bcc9f,
           type: 3}
         ModelPartMaterial: {fileID: 2100000, guid: 1d20fe0a8b539ed4a841fc6639f10884,
           type: 2}
         modelName: Black Hair
+      ModelThumbnails: {fileID: 0}
     - type: 0
       modelProperties:
         modelObject: {fileID: 0}
-        modelThumbnails: {fileID: 2800000, guid: d631f6b92e790e14d8cdf47750b5d1fb,
+        ModelThumbnails: {fileID: 2800000, guid: d631f6b92e790e14d8cdf47750b5d1fb,
           type: 3}
         ModelPartMaterial: {fileID: 2100000, guid: 608ce43b62a38244a9b99528272936ac,
           type: 2}
         modelName: Red Hair
+      ModelThumbnails: {fileID: 0}
     - type: 0
       modelProperties:
         modelObject: {fileID: 0}
-        modelThumbnails: {fileID: 2800000, guid: 6031b273c9b294949be5520ba1137bc4,
+        ModelThumbnails: {fileID: 2800000, guid: aab6409304065914a932af94cf7f8b99,
           type: 3}
         ModelPartMaterial: {fileID: 2100000, guid: 84903368a9d43f1439640f81b411565a,
           type: 2}
         modelName: Brown Hair
+      ModelThumbnails: {fileID: 0}
     - type: 3
       modelProperties:
         modelObject: {fileID: 0}
-        modelThumbnails: {fileID: 2800000, guid: b3e3fa6c2c6fcdc4eb4157892739fb5c,
+        ModelThumbnails: {fileID: 2800000, guid: b3e3fa6c2c6fcdc4eb4157892739fb5c,
           type: 3}
         ModelPartMaterial: {fileID: 2100000, guid: 287362fd0f2611f4f91584128aa37fdd,
           type: 2}
         modelName: Brown Shoe
+      ModelThumbnails: {fileID: 0}
     - type: 3
       modelProperties:
         modelObject: {fileID: 0}
-        modelThumbnails: {fileID: 2800000, guid: 06514b557b6d5ad4c99416fed4ff19a3,
+        ModelThumbnails: {fileID: 2800000, guid: 06514b557b6d5ad4c99416fed4ff19a3,
           type: 3}
         ModelPartMaterial: {fileID: 2100000, guid: 755af908fea8d6041be8d9702950f4a3,
           type: 2}
         modelName: Blue Shoe
+      ModelThumbnails: {fileID: 0}
     - type: 3
       modelProperties:
         modelObject: {fileID: 0}
-        modelThumbnails: {fileID: 2800000, guid: cc26a1b978167614eb560aca2aff0d2a,
+        ModelThumbnails: {fileID: 2800000, guid: cc26a1b978167614eb560aca2aff0d2a,
           type: 3}
         ModelPartMaterial: {fileID: 2100000, guid: abbf0fcc92b284b468ef89adffa0fbe0,
           type: 2}
         modelName: Black Shoe
+      ModelThumbnails: {fileID: 0}
     - type: 4
       modelProperties:
         modelObject: {fileID: 0}
-        modelThumbnails: {fileID: 2800000, guid: 1a74dea033c3a104ba60d05e22305f96,
+        ModelThumbnails: {fileID: 2800000, guid: 1a74dea033c3a104ba60d05e22305f96,
           type: 3}
         ModelPartMaterial: {fileID: 2100000, guid: d9ea33e92d12dad4a9fbdaff2844afc1,
           type: 2}
-        modelName: Black
+        modelName: Black Jeans
+      ModelThumbnails: {fileID: 0}
     - type: 4
       modelProperties:
         modelObject: {fileID: 0}
-        modelThumbnails: {fileID: 2800000, guid: 7b930883b8da52d4a8e1af6fe73d6389,
+        ModelThumbnails: {fileID: 2800000, guid: 7b930883b8da52d4a8e1af6fe73d6389,
           type: 3}
         ModelPartMaterial: {fileID: 2100000, guid: 12c7e592eaf44fe468cb8f19d613aae2,
           type: 2}
-        modelName: DarkBlue
+        modelName: DarkBlue Jeans
+      ModelThumbnails: {fileID: 0}
     - type: 4
       modelProperties:
         modelObject: {fileID: 0}
-        modelThumbnails: {fileID: 2800000, guid: d150408a4638a314098c41b423563615,
-          type: 3}
+        ModelThumbnails: {fileID: 0}
         ModelPartMaterial: {fileID: 2100000, guid: dbcc1b200306bf34ebae2f0adf9e82ec,
           type: 2}
-        modelName: White
+        modelName: White Jeans
+      ModelThumbnails: {fileID: 0}
     - type: 2
       modelProperties:
         modelObject: {fileID: 0}
-        modelThumbnails: {fileID: 2800000, guid: b526fc035fc458c4dbac09abd7f40b00,
+        ModelThumbnails: {fileID: 2800000, guid: b526fc035fc458c4dbac09abd7f40b00,
           type: 3}
         ModelPartMaterial: {fileID: 2100000, guid: 05b3e08c8718cec439a9d35b28aa6636,
           type: 2}
         modelName: Style1
+      ModelThumbnails: {fileID: 0}
     - type: 2
       modelProperties:
         modelObject: {fileID: 0}
-        modelThumbnails: {fileID: 2800000, guid: c4bb5a37bc2ba364f8b9d75529966ed6,
+        ModelThumbnails: {fileID: 2800000, guid: c4bb5a37bc2ba364f8b9d75529966ed6,
           type: 3}
         ModelPartMaterial: {fileID: 2100000, guid: 93aacd75fbcb94a44999b1050ed538a3,
           type: 2}
         modelName: Style2
+      ModelThumbnails: {fileID: 0}
     - type: 2
       modelProperties:
         modelObject: {fileID: 0}
-        modelThumbnails: {fileID: 2800000, guid: c9b49e2ec0974be4186fde9558ba5a8a,
+        ModelThumbnails: {fileID: 2800000, guid: c9b49e2ec0974be4186fde9558ba5a8a,
           type: 3}
         ModelPartMaterial: {fileID: 2100000, guid: 06cda9619e49de94493d08ecef378d50,
           type: 2}
         modelName: Style3
+      ModelThumbnails: {fileID: 0}
     - type: 5
       modelProperties:
         modelObject: {fileID: 0}
-        modelThumbnails: {fileID: 2800000, guid: b30999d8a865ef64ab00900c1ba02a13,
+        ModelThumbnails: {fileID: 2800000, guid: b30999d8a865ef64ab00900c1ba02a13,
           type: 3}
         ModelPartMaterial: {fileID: 2100000, guid: af1340172fa7d58488437228caac4137,
           type: 2}
-        modelName: Purple
+        modelName: Purple Off
+      ModelThumbnails: {fileID: 0}
     - type: 5
       modelProperties:
         modelObject: {fileID: 0}
-        modelThumbnails: {fileID: 2800000, guid: dde7344e934d8d4479e1549e31fe01a0,
+        ModelThumbnails: {fileID: 2800000, guid: dde7344e934d8d4479e1549e31fe01a0,
           type: 3}
         ModelPartMaterial: {fileID: 2100000, guid: eb4fd4cad618f2f409d43f13ba30fcd8,
           type: 2}
-        modelName: Gray
+        modelName: Gray Off
+      ModelThumbnails: {fileID: 0}
     - type: 5
       modelProperties:
         modelObject: {fileID: 0}
-        modelThumbnails: {fileID: 2800000, guid: 1280ea80699394b42a238b986d4d948b,
+        ModelThumbnails: {fileID: 2800000, guid: 1280ea80699394b42a238b986d4d948b,
           type: 3}
         ModelPartMaterial: {fileID: 2100000, guid: cdb1eb74bb510c04c8d7d4635be24571,
           type: 2}
-        modelName: Green
+        modelName: Green Off
+      ModelThumbnails: {fileID: 0}
