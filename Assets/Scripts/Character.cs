@@ -51,10 +51,18 @@ public class CharacterSOData
     public Transform modelPositionTransform;
     public Sprite CharacterThumbnail;
     public List<Category> categories;
+    public List<ModelPropertyType> excludeTypes;
 }
 
 
 public enum ModelPropertyType
 {
-    Hair, Body, FaceStyle, Shoes, Jeans, OffShoulder, 
+    Hair, Body, FaceStyle, Shoes, Jeans, OffShoulder, Shorts
+}
+
+[System.Serializable]
+public class ExcludeType
+{
+    public ModelPropertyType modelPropertyType;
+    public bool CanExclude;
 }

@@ -140,3 +140,4 @@ MonoBehaviour:
         ModelPartMaterial: {fileID: 2100000, guid: cdb1eb74bb510c04c8d7d4635be24571,
           type: 2}
         modelName: Green Off
+    excludeTypes: 060000000100000002000000

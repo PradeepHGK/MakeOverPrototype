@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2377517430784658274}
-  - component: {fileID: 2377517430784658273}
+  - component: {fileID: 6836641676520910396}
   - component: {fileID: 3210239795271344453}
   m_Layer: 0
   m_Name: CharacterModelController
@@ -32,7 +32,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2377517430784658273
+--- !u!114 &6836641676520910396
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,15 +41,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2377517430784658272}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4399acc9487d2482e870c6dc6524cbb1, type: 3}
+  m_Script: {fileID: 11500000, guid: 334281fc5845d4a05bac8742e5a3059b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _charactersData:
-  - {fileID: 11400000, guid: 2767f77883ce749f9949c71f7676bb0b, type: 2}
+  _charactersData: []
   _listParent: {fileID: 0}
-  _characterBtnPrefab: {fileID: 2448937978993299066, guid: 16000d33b6d3240ccb7a996b42991000,
-    type: 3}
+  _characterBtnPrefab: {fileID: 0}
   _Successpopup: {fileID: 0}
+  _BGpanel: {fileID: 0}
   _characterBtnList: {fileID: 0}
   _categoriesBtnList: {fileID: 0}
   _assetBtnList: {fileID: 0}
@@ -57,6 +56,8 @@ MonoBehaviour:
   _currentCharacterModel: {fileID: 0}
   backButton: {fileID: 0}
   DoneButton: {fileID: 0}
+  mapSpaceObject: {fileID: 0}
+  CharacterCamera: {fileID: 0}
 --- !u!65 &3210239795271344453
 BoxCollider:
   m_ObjectHideFlags: 0

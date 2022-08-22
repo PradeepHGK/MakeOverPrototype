@@ -8,9 +8,9 @@ using TMPro;
 using UnityEngine.SceneManagement;
 using MakeOver.Constant;
 
-public class CharacterModelController : MonoBehaviour
+public class CharacterModelController_duplicate : MonoBehaviour
 {
-    public static CharacterModelController Instance;
+    public static CharacterModelController_duplicate Instance;
 
     [Space(20)]
 
@@ -32,8 +32,6 @@ public class CharacterModelController : MonoBehaviour
 
     [SerializeField] Button backButton;
     [SerializeField] Button DoneButton;
-    private GameObject UICameraObject;
-    [SerializeField] private GameObject mapSpaceObject;
 
     [SerializeField] private Camera CharacterCamera;
 
@@ -46,24 +44,8 @@ public class CharacterModelController : MonoBehaviour
 
     private void Start()
     {
-        //LoadCharacterData();
+        LoadCharacterData();
         DoneButton.onClick.AddListener(OnClickDoneBtn);
-
-        if (mapSpaceObject == null)
-        {
-            InvokeRepeating("CallMap", 2f, 5);
-        }
-    }
-
-    void CallMap()
-    {
-        if (mapSpaceObject == null)
-            StartCoroutine(DisabledObject());
-    }
-
-    void DisabledMap()
-    {
-        if (mapSpaceObject != null) mapSpaceObject.SetActive(false);
     }
 
     public void LoadCharacterData()
@@ -77,16 +59,27 @@ public class CharacterModelController : MonoBehaviour
             _currentCharacterModel.transform.localEulerAngles = new Vector3(0, 180, 0);
 
             _currentCharacterSelected = item;
+
+            characterBtn.onClick.AddListener(() =>
+            {
+                LoadCategoryData();
+                _characterBtnList.SetActive(false);
+            }
+            );
+
+            _characterBtnList.SetActive(true);
         }
-        LoadAssetData();
     }
 
     void LoadCategoryData()
     {
         var typeList = Enum.GetValues(typeof(ModelPropertyType));
+
         foreach (ModelPropertyType item in typeList)
         {
-            if (item != ModelPropertyType.Body)
+            var canadd = _currentCharacterSelected.modelProperties.excludeTypes.Contains(item);
+
+            if (!canadd)
             {
                 _categoriesBtnList.SetActive(true);
                 var catebtn = Instantiate(_characterBtnPrefab, _categoriesBtnList.transform.GetChild(0).transform).GetComponent<Button>();
@@ -95,7 +88,7 @@ public class CharacterModelController : MonoBehaviour
                 catebtn.onClick.AddListener(() =>
                 {
                     _categoriesBtnList.SetActive(false);
-                    //LoadAssetData((ModelPropertyType)item);
+                    LoadAssetData(item);
                     backButton.gameObject.SetActive(true);
                 });
             }
@@ -103,26 +96,13 @@ public class CharacterModelController : MonoBehaviour
     }
 
 
-    int i = 2;
-    void LoadAssetData()
+    //int i = 2;
+    void LoadAssetData(ModelPropertyType modelPropertyType)
     {
-        UICameraObject = GameObject.Find($"ROOT: PuzzleSpace ({i})");
-
-        if (UICameraObject != null)
-        {
-            UICameraObject.SetActive(false);
-        }
-        else
-        {
-            i++;
-            UICameraObject = GameObject.Find($"ROOT: PuzzleSpace ({i})");
-            UICameraObject.SetActive(false);
-        }
-
-
-        _BGpanel.SetActive(true);
+       
         _assetBtnList.SetActive(true);
-        CharacterCamera.gameObject.SetActive(true);
+        //_BGpanel.SetActive(true);
+        //CharacterCamera.gameObject.SetActive(true);
 
         //StartCoroutine(DisabledObject());
 
@@ -145,14 +125,7 @@ public class CharacterModelController : MonoBehaviour
                 assetBtn.onClick.AddListener(() => LoadAssetOnCharacter(item));
             }
 
-            InvokeRepeating("DisabledMap", 1, 2);
         }
-    }
-
-    IEnumerator DisabledObject()
-    {
-        yield return new WaitForSeconds(1);
-        mapSpaceObject = FindInActiveObjectByName("ROOT: LevelMapSpace (1)");
     }
 
     void LoadAssetOnCharacter(Category category)
@@ -194,11 +167,6 @@ public class CharacterModelController : MonoBehaviour
                 default:
                     break;
             }
-
-            StartCoroutine(DisabledObject());
-            Invoke("ShowPopup", 0.5f);
-
-            CancelInvoke("DisabledMap");
         }
 
         //Local Function
@@ -213,18 +181,9 @@ public class CharacterModelController : MonoBehaviour
 
     void OnClickDoneBtn()
     {
-        //SceneManager.LoadScene(Constants.CandySceneName);
-        _BGpanel.SetActive(false);
+        //_BGpanel.SetActive(false);
         _Successpopup.SetActive(false);
-        CharacterCamera.gameObject.SetActive(false);
-
-        if (UICameraObject != null)
-            UICameraObject.SetActive(true);
-
-        if (mapSpaceObject != null)
-            mapSpaceObject.SetActive(true);
-        else
-            Debug.Log("null");
+        //CharacterCamera.gameObject.SetActive(false);
     }
 
     void ShowPopup()
