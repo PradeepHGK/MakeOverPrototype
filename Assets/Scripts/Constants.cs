@@ -7,5 +7,7 @@ namespace MakeOver.Constant
     public class Constants : MonoBehaviour
     {
         public static string CandySceneName = "CandyFairyTales_Demo";
+        public static string CharacterScene = "CharacterModelUpdate";
+
     }
 }
