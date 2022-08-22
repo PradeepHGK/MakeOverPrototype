@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2761779570099579219}
   m_Layer: 0
   m_Name: Shoes_Heels
-  m_TagString: Untagged
+  m_TagString: Shoes
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -255,6 +255,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7469989293395105096}
   - component: {fileID: 5273199099973451413}
+  - component: {fileID: 713062019815226961}
+  - component: {fileID: 5285048903853226206}
   m_Layer: 0
   m_Name: Scarlett_Hairstyle2_Shirt_Jeans
   m_TagString: Untagged
@@ -300,6 +302,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &713062019815226961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540816131914081826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fb4fe3bc411a02468e626cd33d9618f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1000
+--- !u!65 &5285048903853226206
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540816131914081826}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3160688, y: 1.5870597, z: 0.6006558}
+  m_Center: {x: 0.00001889467, y: 0.74511397, z: 0.006438315}
 --- !u!1 &1064551537400461920
 GameObject:
   m_ObjectHideFlags: 0
@@ -2082,7 +2110,7 @@ GameObject:
   - component: {fileID: 6217459140770740821}
   m_Layer: 0
   m_Name: Hair_MessyPony
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2358,7 +2386,7 @@ GameObject:
   - component: {fileID: 2522626663611809604}
   m_Layer: 0
   m_Name: Eyes
-  m_TagString: Untagged
+  m_TagString: Eyes
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2635,7 +2663,7 @@ GameObject:
   - component: {fileID: 2719059838225543474}
   m_Layer: 0
   m_Name: TShirt_Jeans
-  m_TagString: Untagged
+  m_TagString: Jeans
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

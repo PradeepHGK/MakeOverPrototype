@@ -167,7 +167,7 @@ GameObject:
   - component: {fileID: 8207529443245300073}
   m_Layer: 0
   m_Name: Shoes_Boots
-  m_TagString: Untagged
+  m_TagString: Shoes
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -905,6 +905,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5064088047208977246}
   - component: {fileID: 5365491044771994304}
+  - component: {fileID: 7369151024324829005}
+  - component: {fileID: 8041947725059458922}
   m_Layer: 0
   m_Name: Scarlett_Hairstyle2_Tank_Jeans
   m_TagString: Untagged
@@ -919,7 +921,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2845183813189326804}
-  m_LocalRotation: {x: -0.012172955, y: -0.99991006, z: -0.000068571295, w: -0.005632499}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -930,7 +932,7 @@ Transform:
   - {fileID: 1617458368712009511}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -180.646, z: 1.395}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &5365491044771994304
 Animator:
   serializedVersion: 3
@@ -950,6 +952,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &7369151024324829005
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2845183813189326804}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2982093, y: 1.5303428, z: 0.47416145}
+  m_Center: {x: -0.008615765, y: 0.7119451, z: -0.05371497}
+--- !u!114 &8041947725059458922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2845183813189326804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fb4fe3bc411a02468e626cd33d9618f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1000
 --- !u!1 &2924847283835942875
 GameObject:
   m_ObjectHideFlags: 0
@@ -1585,7 +1613,7 @@ GameObject:
   - component: {fileID: 1744631991423843527}
   m_Layer: 0
   m_Name: TankTop_Jeans
-  m_TagString: Untagged
+  m_TagString: Jeans
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2050,7 +2078,7 @@ GameObject:
   - component: {fileID: 4571267921173240634}
   m_Layer: 0
   m_Name: Hair_MessyPony
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2264,7 +2292,7 @@ GameObject:
   - component: {fileID: 3811765528978842494}
   m_Layer: 0
   m_Name: Eyes
-  m_TagString: Untagged
+  m_TagString: Eyes
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

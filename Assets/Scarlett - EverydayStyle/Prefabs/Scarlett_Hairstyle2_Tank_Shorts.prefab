@@ -785,7 +785,7 @@ GameObject:
   - component: {fileID: 4884294094900697942}
   m_Layer: 0
   m_Name: TankTop_Shorts
-  m_TagString: Untagged
+  m_TagString: Shorts
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -939,6 +939,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7770217259300841164}
   - component: {fileID: 6739458728431788494}
+  - component: {fileID: 6761058713765737038}
+  - component: {fileID: 5354918758581793268}
   m_Layer: 0
   m_Name: Scarlett_Hairstyle2_Tank_Shorts
   m_TagString: Untagged
@@ -984,6 +986,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &6761058713765737038
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3356417979745789258}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4385531, y: 1.5475817, z: 0.64223874}
+  m_Center: {x: -0.0027759075, y: 0.7380986, z: -0.009422346}
+--- !u!114 &5354918758581793268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3356417979745789258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fb4fe3bc411a02468e626cd33d9618f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1000
 --- !u!1 &3391094414869494450
 GameObject:
   m_ObjectHideFlags: 0
@@ -1744,7 +1772,7 @@ GameObject:
   - component: {fileID: 3847206851132646502}
   m_Layer: 0
   m_Name: Eyes
-  m_TagString: Untagged
+  m_TagString: Eyes
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2083,7 +2111,7 @@ GameObject:
   - component: {fileID: 8297594370517647294}
   m_Layer: 0
   m_Name: Shoes_Heels
-  m_TagString: Untagged
+  m_TagString: Shoes
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2267,7 +2295,7 @@ GameObject:
   - component: {fileID: 8298038839068152679}
   m_Layer: 0
   m_Name: Hair_MessyPony
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

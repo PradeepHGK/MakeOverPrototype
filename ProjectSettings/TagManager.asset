@@ -10,6 +10,8 @@ TagManager:
   - Shoes
   - Jeans
   - FaceStyle
+  - Shorts
+  - Eyes
   layers:
   - Default
   - TransparentFX
