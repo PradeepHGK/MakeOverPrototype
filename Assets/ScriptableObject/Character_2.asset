@@ -91,4 +91,4 @@ MonoBehaviour:
         ModelPartMaterial: {fileID: 2100000, guid: 02e4589de6c51f84d90805dbd7e9432c,
           type: 2}
         modelName: Blue_Medium
-    excludeTypes: 01000000060000000200000005000000
+    excludeTypes: 0100000006000000020000000500000007000000
