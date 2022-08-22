@@ -383,92 +383,6 @@
 					},
 					{
 						"type":"YMatchThree.Core.SlotInfo",
-						"coordinate":"5x0",
-						"content":{
-							{
-								"type":"YMatchThree.Core.ContentInfo",
-								"ID":"Chip",
-								"info":{
-									"type":"YMatchThree.Core.ItemColorInfo",
-									"t":"0"
-								}
-							},
-							{
-								"type":"YMatchThree.Core.ContentInfo",
-								"ID":"IngredientTarget"
-							}
-						}
-					},
-					{
-						"type":"YMatchThree.Core.SlotInfo",
-						"coordinate":"5x1",
-						"content":{
-							{
-								"type":"YMatchThree.Core.ContentInfo",
-								"ID":"Chip",
-								"info":{
-									"type":"YMatchThree.Core.ItemColorInfo",
-									"t":"0"
-								}
-							}
-						}
-					},
-					{
-						"type":"YMatchThree.Core.SlotInfo",
-						"coordinate":"5x2",
-						"content":{
-							{
-								"type":"YMatchThree.Core.ContentInfo",
-								"ID":"Chip",
-								"info":{
-									"type":"YMatchThree.Core.ItemColorInfo",
-									"t":"0"
-								}
-							}
-						}
-					},
-					{
-						"type":"YMatchThree.Core.SlotInfo",
-						"coordinate":"5x5",
-						"content":{
-							{
-								"type":"YMatchThree.Core.ContentInfo",
-								"ID":"Chip",
-								"info":{
-									"type":"YMatchThree.Core.ItemColorInfo",
-									"t":"0"
-								}
-							},
-							{
-								"type":"YMatchThree.Core.ContentInfo",
-								"ID":"ExtendedChipGenerator",
-								"ECGCases":{
-									{
-										"type":"YMatchThree.Core.ExtendedChipGenerator+ECGCase",
-										"info":{
-											"type":"YMatchThree.Core.ContentInfo",
-											"ID":"Chip",
-											"info":{
-												"type":"YMatchThree.Core.ItemColorInfo",
-												"t":"0"
-											}
-										},
-										"weight":"6"
-									},
-									{
-										"type":"YMatchThree.Core.ExtendedChipGenerator+ECGCase",
-										"info":{
-											"type":"YMatchThree.Core.ContentInfo",
-											"ID":"Mushroom"
-										},
-										"weight":"1"
-									}
-								}
-							}
-						}
-					},
-					{
-						"type":"YMatchThree.Core.SlotInfo",
 						"coordinate":"2x1",
 						"content":{
 							{
@@ -578,34 +492,6 @@
 					{
 						"type":"YMatchThree.Core.SlotInfo",
 						"coordinate":"3x3",
-						"content":{
-							{
-								"type":"YMatchThree.Core.ContentInfo",
-								"ID":"Chip",
-								"info":{
-									"type":"YMatchThree.Core.ItemColorInfo",
-									"t":"0"
-								}
-							}
-						}
-					},
-					{
-						"type":"YMatchThree.Core.SlotInfo",
-						"coordinate":"5x4",
-						"content":{
-							{
-								"type":"YMatchThree.Core.ContentInfo",
-								"ID":"Chip",
-								"info":{
-									"type":"YMatchThree.Core.ItemColorInfo",
-									"t":"0"
-								}
-							}
-						}
-					},
-					{
-						"type":"YMatchThree.Core.SlotInfo",
-						"coordinate":"5x3",
 						"content":{
 							{
 								"type":"YMatchThree.Core.ContentInfo",

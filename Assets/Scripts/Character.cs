@@ -57,7 +57,7 @@ public class CharacterSOData
 
 public enum ModelPropertyType
 {
-    Hair, Body, FaceStyle, Shoes, Jeans, OffShoulder, Shorts
+    Hair, Body, FaceStyle, Shoes, Jeans, OffShoulder, Shorts, Tank_Shirt
 }
 
 [System.Serializable]

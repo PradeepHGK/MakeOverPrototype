@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d49c909e71c20489a9933ebe683da111, type: 3}
   m_Name: Character_2
   m_EditorClassIdentifier: 
-  GirlModel: {fileID: 5796627008308279849, guid: e65e84ceac60c4948baa951b72a63a43,
+  GirlModel: {fileID: 540816131914081826, guid: 32493965a19a8204a909f32662593cb9,
     type: 3}
   modelProperties:
     CharacterName: 
@@ -22,7 +22,73 @@ MonoBehaviour:
     - type: 0
       modelProperties:
         modelObject: {fileID: 0}
-        modelThumbnails: {fileID: 0}
-        ModelPartMaterial: {fileID: 0}
-        modelName: 
-    excludeTypes: 01000000050000000600000002000000
+        modelThumbnails: {fileID: 21300000, guid: 947719951d2f4ff4988debb99c8517a2,
+          type: 3}
+        ModelPartMaterial: {fileID: 2100000, guid: efcefe78bb15c3d45bb43b3b5ce1fc40,
+          type: 2}
+        modelName: LightBlond
+    - type: 0
+      modelProperties:
+        modelObject: {fileID: 0}
+        modelThumbnails: {fileID: 21300000, guid: e085f606a67611441a4a23a8cb3fead0,
+          type: 3}
+        ModelPartMaterial: {fileID: 2100000, guid: 326470babd7182144a2eabf36c830091,
+          type: 2}
+        modelName: Lavender
+    - type: 0
+      modelProperties:
+        modelObject: {fileID: 0}
+        modelThumbnails: {fileID: 21300000, guid: f1abceea761270d4ba2ffb8089b9ce6d,
+          type: 3}
+        ModelPartMaterial: {fileID: 2100000, guid: 08e7be24e74646b4482928f0f3677d05,
+          type: 2}
+        modelName: Silver
+    - type: 3
+      modelProperties:
+        modelObject: {fileID: 0}
+        modelThumbnails: {fileID: 21300000, guid: 65e346b263b493544b849714452acb94,
+          type: 3}
+        ModelPartMaterial: {fileID: 2100000, guid: 50c329a17c47683499330d1d5d2c1025,
+          type: 2}
+        modelName: Yellow
+    - type: 3
+      modelProperties:
+        modelObject: {fileID: 0}
+        modelThumbnails: {fileID: 21300000, guid: 6812a087be1a49a4c908cedbe48929a1,
+          type: 3}
+        ModelPartMaterial: {fileID: 2100000, guid: d01fa6ca685d66347896f096868127ca,
+          type: 2}
+        modelName: Red
+    - type: 3
+      modelProperties:
+        modelObject: {fileID: 0}
+        modelThumbnails: {fileID: 21300000, guid: 6b415ac0bf0b16a47a1b1ece9435081f,
+          type: 3}
+        ModelPartMaterial: {fileID: 2100000, guid: 287362fd0f2611f4f91584128aa37fdd,
+          type: 2}
+        modelName: Brown
+    - type: 4
+      modelProperties:
+        modelObject: {fileID: 0}
+        modelThumbnails: {fileID: 21300000, guid: 99ee2b08d88274c4b818795ccfbc0b76,
+          type: 3}
+        ModelPartMaterial: {fileID: 2100000, guid: 12c7e592eaf44fe468cb8f19d613aae2,
+          type: 2}
+        modelName: Blue_Light
+    - type: 4
+      modelProperties:
+        modelObject: {fileID: 0}
+        modelThumbnails: {fileID: 21300000, guid: 2359654265ace594b882c987de9f29e4,
+          type: 3}
+        ModelPartMaterial: {fileID: 2100000, guid: 818bbf5b3becf7b4b84647c73d6d39dc,
+          type: 2}
+        modelName: Blue_Dark
+    - type: 4
+      modelProperties:
+        modelObject: {fileID: 0}
+        modelThumbnails: {fileID: 21300000, guid: 18ccded1679a2af41852b4ff5fc2b392,
+          type: 3}
+        ModelPartMaterial: {fileID: 2100000, guid: 02e4589de6c51f84d90805dbd7e9432c,
+          type: 2}
+        modelName: Blue_Medium
+    excludeTypes: 01000000060000000200000005000000
