@@ -55,13 +55,14 @@ public class CharacterModelController_duplicate : MonoBehaviour
             var characterBtn = Instantiate(_characterBtnPrefab, _listParent.transform).GetComponent<Button>();
             characterBtn.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = item.ToString();
 
-            _currentCharacterModel = Instantiate(item.GirlModel);
-            _currentCharacterModel.transform.localEulerAngles = new Vector3(0, 180, 0);
 
             _currentCharacterSelected = item;
 
             characterBtn.onClick.AddListener(() =>
             {
+                _currentCharacterModel = Instantiate(item.GirlModel);
+                _currentCharacterModel.transform.localEulerAngles = new Vector3(0, 180, 0);
+
                 LoadCategoryData();
                 _characterBtnList.SetActive(false);
             }
