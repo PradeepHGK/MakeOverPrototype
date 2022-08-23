@@ -767,7 +767,7 @@
 			"type":"YMatchThree.Core.LayersControllerNode",
 			"ID":"5",
 			"position":"300x300",
-			"height":"37",
+			"height":"36",
 			"layers":{
 				{
 					"type":"YMatchThree.Core.LayersControllerNode+LayerAction",
@@ -780,7 +780,7 @@
 			"type":"YMatchThree.Core.EmitBombsNode",
 			"ID":"8",
 			"position":"800x100",
-			"height":"71",
+			"height":"69",
 			"count":"4",
 			"tag":"Bombs",
 			"bombs":{
@@ -792,7 +792,7 @@
 			"type":"YMatchThree.Core.MatchThreeSwapHelpNode",
 			"ID":"10",
 			"position":"300x200",
-			"height":"37",
+			"height":"36",
 			"handName":"RufusHand",
 			"layerID":"Swap1"
 		},
@@ -800,15 +800,15 @@
 			"type":"YMatchThree.Core.MatchThreeSwapHelpNode",
 			"ID":"11",
 			"position":"540x200",
-			"height":"37",
+			"height":"36",
 			"handName":"RufusHand",
 			"layerID":"Swap2"
 		},
 		{
 			"type":"Yurowm.Dialogues.DialogueNode",
 			"ID":"12",
-			"position":"300x100",
-			"height":"57",
+			"position":"300x80",
+			"height":"55",
 			"instructions":{
 				{
 					"type":"Yurowm.Dialogues.CharacterShowInstruction",
@@ -827,7 +827,7 @@
 			"type":"Yurowm.Dialogues.DialogueNode",
 			"ID":"13",
 			"position":"540x100",
-			"height":"57",
+			"height":"55",
 			"instructions":{
 				{
 					"type":"Yurowm.Dialogues.CharacterShowInstruction",
@@ -846,7 +846,7 @@
 			"type":"Yurowm.Dialogues.DialogueNode",
 			"ID":"14",
 			"position":"800x220",
-			"height":"57",
+			"height":"55",
 			"instructions":{
 				{
 					"type":"Yurowm.Dialogues.CharacterShowInstruction",
@@ -865,14 +865,14 @@
 			"type":"YMatchThree.Core.WaitTurnNode",
 			"ID":"15",
 			"position":"800x320",
-			"height":"37",
+			"height":"36",
 			"count":"2"
 		},
 		{
 			"type":"Yurowm.Dialogues.DialogueNode",
 			"ID":"16",
 			"position":"800x420",
-			"height":"37",
+			"height":"36",
 			"instructions":{
 				{
 					"type":"Yurowm.Dialogues.ClearInstruction"
@@ -889,7 +889,6 @@
 	"connections":{
 		"(0, 0)-(1, 0)",
 		"(1, 1)-(2, 0)",
-		"(1, 1)-(12, 0)",
 		"(10, 0)-(12, 1)",
 		"(11, 0)-(13, 1)",
 		"(5, 1)-(13, 0)",

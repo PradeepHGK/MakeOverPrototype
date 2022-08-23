@@ -2,7 +2,7 @@
 	"type":"Yurowm.Utilities.EditorStorage",
 	"strings":{
 		"dashboard.lastEditor":"Content/Levels",
-		"leveleditor.lastLevelID":"KKAku5OPMxFqoSn4"
+		"leveleditor.lastLevelID":
 	},
 	"bools":{
 		"editorTipsEnabled":"0",

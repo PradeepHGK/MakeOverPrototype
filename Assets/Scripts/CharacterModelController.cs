@@ -70,11 +70,13 @@ public class CharacterModelController : MonoBehaviour
     {
         foreach (var item in _charactersData)
         {
-            var characterBtn = Instantiate(_characterBtnPrefab, _listParent.transform).GetComponent<Button>();
-            characterBtn.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = item.ToString();
-
             _currentCharacterModel = Instantiate(item.GirlModel);
             _currentCharacterModel.transform.localEulerAngles = new Vector3(0, 180, 0);
+            _currentCharacterModel.SetActive(false);
+
+            //var characterBtn = Instantiate(_characterBtnPrefab, _listParent.transform).GetComponent<Button>();
+            //characterBtn.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = item.ToString();
+
 
             _currentCharacterSelected = item;
         }
@@ -114,15 +116,19 @@ public class CharacterModelController : MonoBehaviour
         }
         else
         {
-            i++;
-            UICameraObject = GameObject.Find($"ROOT: PuzzleSpace ({i})");
-            UICameraObject.SetActive(false);
+            if (UICameraObject != null)
+            {
+                i++;
+                UICameraObject = GameObject.Find($"ROOT: PuzzleSpace ({i})");
+                UICameraObject.SetActive(false);
+            }
         }
 
 
         _BGpanel.SetActive(true);
         _assetBtnList.SetActive(true);
         CharacterCamera.gameObject.SetActive(true);
+        _currentCharacterModel.SetActive(true);
 
         //StartCoroutine(DisabledObject());
 
@@ -151,7 +157,7 @@ public class CharacterModelController : MonoBehaviour
 
     IEnumerator DisabledObject()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2);
         mapSpaceObject = FindInActiveObjectByName("ROOT: LevelMapSpace (1)");
     }
 
@@ -225,6 +231,9 @@ public class CharacterModelController : MonoBehaviour
             mapSpaceObject.SetActive(true);
         else
             Debug.Log("null");
+
+        Destroy(_currentCharacterModel);
+
     }
 
     void ShowPopup()
@@ -247,4 +256,22 @@ public class CharacterModelController : MonoBehaviour
         }
         return null;
     }
+
+    GameObject FindInActiveObjectByTag(string tag)
+    {
+
+        Transform[] objs = Resources.FindObjectsOfTypeAll<Transform>() as Transform[];
+        for (int i = 0; i < objs.Length; i++)
+        {
+            if (objs[i].hideFlags == HideFlags.None)
+            {
+                if (objs[i].CompareTag(tag))
+                {
+                    return objs[i].gameObject;
+                }
+            }
+        }
+        return null;
+    }
+
 }

@@ -1,7 +1,7 @@
  {
 	"type":"YMatchThree.Core.LevelScriptOrdered",
 	"order":"3",
-	"world":"NightCity",
+	"world":"MovedLevels",
 	"path":"Tutorial",
 	"id":"9VCooyRrWnJvTIep",
 	"name":"WrappedBomb",
@@ -370,7 +370,7 @@
 			"type":"YMatchThree.Core.LayersControllerNode",
 			"ID":"5",
 			"position":"540x100",
-			"height":"37",
+			"height":"36",
 			"layers":{
 				{
 					"type":"YMatchThree.Core.LayersControllerNode+LayerAction",
@@ -825,7 +825,7 @@
 			"type":"YMatchThree.Core.LayersControllerNode",
 			"ID":"12",
 			"position":"540x500",
-			"height":"37",
+			"height":"36",
 			"layers":{
 				{
 					"type":"YMatchThree.Core.LayersControllerNode+LayerAction",
@@ -1451,7 +1451,7 @@
 			"type":"YMatchThree.Core.MatchThreeSwapHelpNode",
 			"ID":"17",
 			"position":"300x200",
-			"height":"37",
+			"height":"36",
 			"handName":"RufusHand",
 			"layerID":"Swap1"
 		},
@@ -1459,7 +1459,7 @@
 			"type":"YMatchThree.Core.MatchThreeSwapHelpNode",
 			"ID":"18",
 			"position":"540x300",
-			"height":"37",
+			"height":"36",
 			"handName":"RufusHand",
 			"layerID":"Swap1"
 		},
@@ -1467,7 +1467,7 @@
 			"type":"YMatchThree.Core.MatchThreeSwapHelpNode",
 			"ID":"19",
 			"position":"300x600",
-			"height":"37",
+			"height":"36",
 			"handName":"RufusHand",
 			"layerID":"Swap1"
 		},
@@ -1475,7 +1475,7 @@
 			"type":"YMatchThree.Core.MatchThreeSwapHelpNode",
 			"ID":"20",
 			"position":"540x700",
-			"height":"37",
+			"height":"36",
 			"handName":"RufusHand",
 			"layerID":"Swap2"
 		},
@@ -1483,7 +1483,7 @@
 			"type":"Yurowm.Dialogues.DialogueNode",
 			"ID":"21",
 			"position":"300x100",
-			"height":"57",
+			"height":"55",
 			"instructions":{
 				{
 					"type":"Yurowm.Dialogues.CharacterShowInstruction",
@@ -1502,7 +1502,7 @@
 			"type":"Yurowm.Dialogues.DialogueNode",
 			"ID":"22",
 			"position":"540x200",
-			"height":"57",
+			"height":"55",
 			"instructions":{
 				{
 					"type":"Yurowm.Dialogues.CharacterShowInstruction",
@@ -1521,7 +1521,7 @@
 			"type":"Yurowm.Dialogues.DialogueNode",
 			"ID":"23",
 			"position":"300x500",
-			"height":"57",
+			"height":"55",
 			"instructions":{
 				{
 					"type":"Yurowm.Dialogues.CharacterShowInstruction",
@@ -1540,7 +1540,7 @@
 			"type":"Yurowm.Dialogues.DialogueNode",
 			"ID":"24",
 			"position":"540x600",
-			"height":"57",
+			"height":"55",
 			"instructions":{
 				{
 					"type":"Yurowm.Dialogues.CharacterShowInstruction",
@@ -1559,7 +1559,7 @@
 			"type":"Yurowm.Dialogues.DialogueNode",
 			"ID":"25",
 			"position":"300x900",
-			"height":"37",
+			"height":"36",
 			"instructions":{
 				{
 					"type":"Yurowm.Dialogues.ClearInstruction"
