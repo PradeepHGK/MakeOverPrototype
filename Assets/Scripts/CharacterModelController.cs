@@ -151,7 +151,10 @@ public class CharacterModelController : MonoBehaviour
                 assetBtn.onClick.AddListener(() => LoadAssetOnCharacter(item));
             }
 
-            InvokeRepeating("DisabledMap", 1, 2);
+            InvokeRepeating("DisabledMap", 1, 1);
+
+            if (UICameraObject != null)
+                UICameraObject.SetActive(false);
         }
     }
 
@@ -223,6 +226,7 @@ public class CharacterModelController : MonoBehaviour
         _BGpanel.SetActive(false);
         _Successpopup.SetActive(false);
         CharacterCamera.gameObject.SetActive(false);
+        _currentCharacterModel.SetActive(false);
 
         if (UICameraObject != null)
             UICameraObject.SetActive(true);
@@ -232,7 +236,7 @@ public class CharacterModelController : MonoBehaviour
         else
             Debug.Log("null");
 
-        Destroy(_currentCharacterModel);
+        Destroy(_currentCharacterModel.gameObject, 2);
 
     }
 
