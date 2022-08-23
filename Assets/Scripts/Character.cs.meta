@@ -3,7 +3,8 @@ guid: d49c909e71c20489a9933ebe683da111
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - GirlModel: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

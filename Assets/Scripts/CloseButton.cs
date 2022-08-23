@@ -25,7 +25,9 @@ public class CloseButton : MonoBehaviour
 
     public void CloseAssetList()
     {
-        if (AssetList != null)
+        if (AssetList != null
+            
+            )
         {
             AssetList.SetActive(false);
 

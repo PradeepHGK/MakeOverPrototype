@@ -44,7 +44,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 334281fc5845d4a05bac8742e5a3059b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _charactersData: []
+  _charactersData:
+  - {fileID: 11400000, guid: 2767f77883ce749f9949c71f7676bb0b, type: 2}
+  - {fileID: 11400000, guid: 71cfbb686cdd84bceb333d642c401f20, type: 2}
   _listParent: {fileID: 0}
   _characterBtnPrefab: {fileID: 0}
   _Successpopup: {fileID: 0}
@@ -56,7 +58,6 @@ MonoBehaviour:
   _currentCharacterModel: {fileID: 0}
   backButton: {fileID: 0}
   DoneButton: {fileID: 0}
-  mapSpaceObject: {fileID: 0}
   CharacterCamera: {fileID: 0}
 --- !u!65 &3210239795271344453
 BoxCollider:

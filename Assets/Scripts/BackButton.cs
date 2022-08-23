@@ -7,13 +7,17 @@ public class BackButton : MonoBehaviour
     public GameObject characterList;
     public GameObject categoryList;
     public GameObject AssetList;
-    public GameObject Content;
+    public GameObject AssetContent;
+    public GameObject CategoryContent;
     private Button backButton;
 
     private void Start()
     {
         backButton = GetComponent<Button>();
         backButton.onClick.AddListener(CloseAssetList);
+        backButton.onClick.AddListener(OpenCategoryList);
+        backButton.onClick.AddListener(CloseCategoryList);
+
     }
 
     public void OpenCharacterList()
@@ -21,7 +25,7 @@ public class BackButton : MonoBehaviour
         if (characterList != null)
         {
             characterList.SetActive(true);
-            CloseAssetList();
+            
         }
     }
     public void OpenCategoryList()
@@ -40,9 +44,9 @@ public class BackButton : MonoBehaviour
         {
             AssetList.SetActive(false);
 
-            for (int i = 0; i < Content.transform.childCount; i++)
+            for (int i = 0; i < CategoryContent.transform.childCount; i++)
             {
-                Destroy(Content.transform.GetChild(i).gameObject, 1);
+                Destroy(CategoryContent.transform.GetChild(i).gameObject, 1);
             }
 
             OpenCharacterList();
@@ -56,9 +60,9 @@ public class BackButton : MonoBehaviour
         {
             AssetList.SetActive(false);
 
-            for (int i = 0; i < Content.transform.childCount; i++)
+            for (int i = 0; i < AssetContent.transform.childCount; i++)
             {
-                Destroy(Content.transform.GetChild(i).gameObject, 2);
+                Destroy(AssetContent.transform.GetChild(i).gameObject, 1);
             }
 
             OpenCategoryList();

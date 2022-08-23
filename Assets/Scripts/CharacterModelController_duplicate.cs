@@ -175,9 +175,15 @@ public class CharacterModelController_duplicate : MonoBehaviour
                     }
                     break;
                 case ModelPropertyType.Shorts:
-                    if (bodyParts.CompareTag("Shoes"))
+                    if (bodyParts.CompareTag("Hair"))
                     {
-                        bodyParts.GetComponent<SkinnedMeshRenderer>().material = category.modelProperties.ModelPartMaterial;
+                        UpdateSharedMaterialArray(bodyParts.gameObject, 1, category.modelProperties.ModelPartMaterial);
+                    }
+                    break;
+                case ModelPropertyType.Tank_Shirt:
+                    if (bodyParts.CompareTag("Shorts"))
+                    {
+                        UpdateSharedMaterialArray(bodyParts.gameObject, 1, category.modelProperties.ModelPartMaterial);
                     }
                     break;
 
