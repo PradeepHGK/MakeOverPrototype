@@ -596,7 +596,7 @@ GameObject:
   - component: {fileID: 4251318365854262963}
   m_Layer: 0
   m_Name: Scarlett_Hairstyle1_Tank_Jeans
-  m_TagString: Untagged
+  m_TagString: Jeans
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -165,6 +165,19 @@ public class CharacterModelController_duplicate : MonoBehaviour
                         UpdateSharedMaterialArray(bodyParts.gameObject, 1, category.modelProperties.ModelPartMaterial);
                     }
                     break;
+                case ModelPropertyType.Body:
+                    if (bodyParts.CompareTag("Shoes"))
+                    {
+                        bodyParts.GetComponent<SkinnedMeshRenderer>().material = category.modelProperties.ModelPartMaterial;
+                    }
+                    break;
+                case ModelPropertyType.Shorts:
+                    if (bodyParts.CompareTag("Shoes"))
+                    {
+                        bodyParts.GetComponent<SkinnedMeshRenderer>().material = category.modelProperties.ModelPartMaterial;
+                    }
+                    break;
+
                 default:
                     break;
             }
