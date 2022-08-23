@@ -175,7 +175,7 @@ public class CharacterModelController_duplicate : MonoBehaviour
                     }
                     break;
                 case ModelPropertyType.Shorts:
-                    if (bodyParts.CompareTag("Hair"))
+                    if (bodyParts.CompareTag("Shoes"))
                     {
                         UpdateSharedMaterialArray(bodyParts.gameObject, 1, category.modelProperties.ModelPartMaterial);
                     }
