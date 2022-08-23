@@ -496,6 +496,11 @@ PrefabInstance:
       propertyPath: m_Padding.m_Bottom
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 1672743114374650467, guid: d37a2a0bd80e84523bf3cec0e8c8ce84,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2191892599171388295, guid: d37a2a0bd80e84523bf3cec0e8c8ce84,
         type: 3}
       propertyPath: m_Sprite
@@ -696,11 +701,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9070695711466846880, guid: d37a2a0bd80e84523bf3cec0e8c8ce84,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 9070695711466846880, guid: d37a2a0bd80e84523bf3cec0e8c8ce84,
         type: 3}

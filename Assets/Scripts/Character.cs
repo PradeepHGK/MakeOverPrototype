@@ -59,10 +59,3 @@ public enum ModelPropertyType
 {
     Hair, Body, FaceStyle, Shoes, Jeans, OffShoulder, Shorts, Tank_Shirt
 }
-
-[System.Serializable]
-public class ExcludeType
-{
-    public ModelPropertyType modelPropertyType;
-    public bool CanExclude;
-}

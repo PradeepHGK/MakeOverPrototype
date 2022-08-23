@@ -34,7 +34,7 @@ public class CharacterModelController_duplicate : MonoBehaviour
     [SerializeField] Button DoneButton;
 
     [SerializeField] private Camera CharacterCamera;
-
+    [SerializeField] private Stack<GameObject> _backStack = new Stack<GameObject>();
 
     private void Awake()
     {
@@ -46,6 +46,9 @@ public class CharacterModelController_duplicate : MonoBehaviour
     {
         LoadCharacterData();
         DoneButton.onClick.AddListener(OnClickDoneBtn);
+        backButton.onClick.AddListener(OnClickBackBtn);
+
+        _backStack.Push(_characterBtnList);
     }
 
     public void LoadCharacterData()
@@ -56,15 +59,17 @@ public class CharacterModelController_duplicate : MonoBehaviour
             characterBtn.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = item.ToString();
 
 
-            _currentCharacterSelected = item;
 
             characterBtn.onClick.AddListener(() =>
             {
+                _currentCharacterSelected = item;
                 _currentCharacterModel = Instantiate(item.GirlModel);
                 _currentCharacterModel.transform.localEulerAngles = new Vector3(0, 180, 0);
 
                 LoadCategoryData();
                 _characterBtnList.SetActive(false);
+                _backStack.Push(_categoriesBtnList);
+                backButton.gameObject.SetActive(true);
             }
             );
 
@@ -78,7 +83,16 @@ public class CharacterModelController_duplicate : MonoBehaviour
 
         foreach (ModelPropertyType item in typeList)
         {
-            var canadd = _currentCharacterSelected.modelProperties.excludeTypes.Contains(item);
+            var canadd = _currentCharacterSelected.modelProperties.excludeTypes.Exists((t)=> {
+
+                if(t.ToString() == item.ToString())
+                {
+                    return true;
+                }
+
+                return false;
+
+            });
 
             if (!canadd)
             {
@@ -91,6 +105,7 @@ public class CharacterModelController_duplicate : MonoBehaviour
                     _categoriesBtnList.SetActive(false);
                     LoadAssetData(item);
                     backButton.gameObject.SetActive(true);
+                    _backStack.Push(_assetBtnList);
                 });
             }
         }
@@ -102,30 +117,18 @@ public class CharacterModelController_duplicate : MonoBehaviour
     {
        
         _assetBtnList.SetActive(true);
-        //_BGpanel.SetActive(true);
-        //CharacterCamera.gameObject.SetActive(true);
 
-        //StartCoroutine(DisabledObject());
-
-        var randomAsset = new List<Category>();
-        var rand = new System.Random();
-
-        for (int i = 0; i < 3; i++)
+        foreach (var item in _currentCharacterSelected.modelProperties.categories)
         {
-            var index = rand.Next(_currentCharacterSelected.modelProperties.categories.Count);
-            randomAsset.Add(_currentCharacterSelected.modelProperties.categories.ElementAt(index));
-        }
-
-        foreach (var item in randomAsset)
-        {
+            if(item.type == modelPropertyType)
             {
                 var assetBtn = Instantiate(_characterBtnPrefab, _assetBtnList.transform.GetChild(0).transform).GetComponent<Button>();
                 assetBtn.gameObject.name = item.modelProperties.modelName;
                 assetBtn.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = item.modelProperties.modelName;
                 assetBtn.transform.GetChild(0).GetComponent<Image>().sprite = item.modelProperties.modelThumbnails;
+
                 assetBtn.onClick.AddListener(() => LoadAssetOnCharacter(item));
             }
-
         }
     }
 
@@ -190,6 +193,35 @@ public class CharacterModelController_duplicate : MonoBehaviour
             var matArray = rend.sharedMaterials;
             matArray[index] = materialToUpdate;
             part.GetComponent<SkinnedMeshRenderer>().sharedMaterials = matArray;
+        }
+    }
+
+    void OnClickBackBtn()
+    {
+        var popObject = _backStack.Pop();
+        popObject.SetActive(false);
+
+        var peekObject = _backStack.Peek();
+        peekObject.SetActive(true);
+
+
+        if (!popObject.name.Contains("Character"))
+        {
+            DestroyChildren(popObject.transform.GetChild(0));
+        }
+
+        if (peekObject.name.Contains("Character"))
+        {
+            Destroy(_currentCharacterModel.gameObject, 2);
+        }
+    }
+
+
+    void DestroyChildren(Transform parent)
+    {
+        foreach (Transform item in parent)
+        {
+            Destroy(item.gameObject, 2);
         }
     }
 
