@@ -5,53 +5,16 @@ using UnityEngine.UI;
 
 public class CharacterMovement : MonoBehaviour
 {
+    public GameObject model;
 
-    public float speed = 200f;
-    private Touch touch;
-
-    private Vector2 touchPosition;
-
-    private Quaternion rotationY;
-
-
-
-
-
-
-    private void OnMouseDrag()
+    public void RotateRight()
     {
-
-        float rotX = Input.GetAxis("Mouse X") * speed * Mathf.Deg2Rad;
-
-
-        transform.Rotate(Vector3.up, rotX);
-
-
+        model.transform.Rotate(0f, -25f, 0f);
     }
-    public void Update()
+
+
+    public void RotateLeft()
     {
-        if (Input.touchCount > 0)
-
-                {
-                    touch = Input.GetTouch(0);
-
-                    if (touch.phase == TouchPhase.Moved)
-
-                    {
-                        rotationY = Quaternion.Euler(0f, -touch.deltaPosition.x * speed, 0f);
-
-                        transform.rotation = rotationY * transform.rotation;
-
-                    }
-
-                }
-
-            }
-
-
-        }
-
-
-
-    
-
+        model.transform.Rotate(0f, 25f, 0f);
+    }
+}
