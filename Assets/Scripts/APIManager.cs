@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 
+/// <summary>
+/// Authour - Pradeep HGK
+/// </summary>
 public class APIManager : MonoBehaviour
 {
 

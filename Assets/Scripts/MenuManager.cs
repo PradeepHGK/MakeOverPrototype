@@ -33,6 +33,8 @@ namespace MakeOver.UI
             CharacterModelController.Instance.LoadCharacterData();
             //Camera.main.gameObject.SetActive(false);
             //SceneManager.LoadScene(Constants.CharacterScene);
+
+            var missingObject  = GameObject.Find("Name");
         }
     }
 }

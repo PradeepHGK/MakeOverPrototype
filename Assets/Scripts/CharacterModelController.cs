@@ -135,13 +135,13 @@ public class CharacterModelController : MonoBehaviour
         var randomAsset = new List<Category>();
         var rand = new System.Random();
 
-        //for (int i = 0; i < 3; i++)
-        //{
-        //    var index = rand.Next(_currentCharacterSelected.modelProperties.categories.Count);
-        //    randomAsset.Add(_currentCharacterSelected.modelProperties.categories.ElementAt(index));
-        //}
+        for (int i = 0; i < 3; i++)
+        {
+            var index = rand.Next(_currentCharacterSelected.modelProperties.categories.Count);
+            randomAsset.Add(_currentCharacterSelected.modelProperties.categories.ElementAt(index));
+        }
 
-        foreach (var item in _currentCharacterSelected.modelProperties.categories)
+        foreach (var item in randomAsset)
         {
             {
                 var assetBtn = Instantiate(_characterBtnPrefab, _assetBtnList.transform.GetChild(0).transform).GetComponent<Button>();

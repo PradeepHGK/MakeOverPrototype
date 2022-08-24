@@ -41,7 +41,7 @@
 				"type":"YMatchThree.Core.Level",
 				"size":"8x8",
 				"gamePlay":"MatchThree",
-				"physic":"StraightPhysic",
+				"physic":"RealisticPhysic",
 				"seed":"144935555",
 				"layers":{
 					{
