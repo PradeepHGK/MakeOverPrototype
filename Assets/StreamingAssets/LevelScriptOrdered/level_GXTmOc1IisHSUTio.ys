@@ -1,7 +1,7 @@
  {
 	"type":"YMatchThree.Core.LevelScriptOrdered",
 	"order":"9",
-	"world":"MovedLevels",
+	"world":"NightCity",
 	"path":"Cookie",
 	"id":"GXTmOc1IisHSUTio",
 	"name":"Wall Of Cookie",

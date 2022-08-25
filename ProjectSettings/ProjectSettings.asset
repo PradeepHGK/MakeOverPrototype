@@ -4,11 +4,11 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 22
-  productGUID: 015b44603d0774aadac8b7948bc0b233
+  productGUID: 691d97fdf275e4286bd20a83b656c36a
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
-  defaultScreenOrientation: 0
+  defaultScreenOrientation: 4
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
@@ -58,8 +58,8 @@ PlayerSettings:
   iosAllowHTTPDownload: 1
   allowedAutorotateToPortrait: 1
   allowedAutorotateToPortraitUpsideDown: 1
-  allowedAutorotateToLandscapeRight: 0
-  allowedAutorotateToLandscapeLeft: 0
+  allowedAutorotateToLandscapeRight: 1
+  allowedAutorotateToLandscapeLeft: 1
   useOSAutorotation: 1
   use32BitDisplayBuffer: 1
   preserveFramebufferAlpha: 0
@@ -76,7 +76,7 @@ PlayerSettings:
   androidFullscreenMode: 1
   defaultIsNativeResolution: 1
   macRetinaSupport: 1
-  runInBackground: 0
+  runInBackground: 1
   captureSingleScreen: 0
   muteOtherAudioSources: 0
   Prepare IOS For Recording: 0
@@ -158,10 +158,10 @@ PlayerSettings:
     iPhone: com.yurowm.candyfairytales
   buildNumber:
     Standalone: 0
-    iPhone: 90
+    iPhone: 83
     tvOS: 0
   overrideDefaultApplicationIdentifier: 1
-  AndroidBundleVersionCode: 90
+  AndroidBundleVersionCode: 83
   AndroidMinSdkVersion: 22
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
@@ -256,7 +256,7 @@ PlayerSettings:
   AndroidEnableTango: 0
   androidEnableBanner: 0
   androidUseLowAccuracyLocation: 0
-  androidUseCustomKeystore: 0
+  androidUseCustomKeystore: 1
   m_AndroidBanners:
   - width: 320
     height: 180
@@ -794,7 +794,6 @@ PlayerSettings:
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
     0: MXPARSER;UNITY_ADS;UNITY_IAP;UNITY_IAP_OBFUSCATION
-    1: MXPARSER;PHYSICS_2D;PHYSICS_3D;UNITY_ADS;UNITY_IAP
     7: MXPARSER;PHYSICS_2D;PHYSICS_3D;UNITY_ADS;UNITY_IAP;UNITY_IAP_OBFUSCATION
   additionalCompilerArguments: {}
   platformArchitecture: {}
@@ -895,7 +894,7 @@ PlayerSettings:
   cloudProjectId: 8855abc6-2d62-4cf2-9c31-e843049f9410
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: ProjectMakeOver
+  projectName: YMatchThree
   organizationId: pradeep3d
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 1

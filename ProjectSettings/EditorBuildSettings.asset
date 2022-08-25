@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/CandyFairyTales_Demo.unity
-    guid: 15f0f33fd92b744519ca55d5fec8c25e
+    path: Assets/_Yurowm/CandyFairyTales.unity
+    guid: 6f9d6c00cee81e14d85a80b0ece2a617
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 1d9f8041c6adbdc408ed42afc927fbbc,
       type: 2}

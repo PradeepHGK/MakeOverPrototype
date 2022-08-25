@@ -10,7 +10,7 @@ namespace Yurowm.UI {
         
         public float planeDistance = 0;
 
-        //[OnLaunch(INITIALIZATION_ORDER + 1)]
+        [OnLaunch(INITIALIZATION_ORDER + 1)]
         static void OnLaunch() {
             if (!defaultCamera) {
                 defaultCamera = AssetManager.Create<Camera>(); 

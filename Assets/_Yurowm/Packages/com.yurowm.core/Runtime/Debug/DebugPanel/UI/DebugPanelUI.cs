@@ -21,7 +21,7 @@ namespace Yurowm.DebugTools {
             private set;
         }
 
-        //[RuntimeInitializeOnLoadMethodAttribute]
+        [RuntimeInitializeOnLoadMethodAttribute]
         static void CreateViewUI() {
             Instance = FindObjectOfType<DebugPanelUI>();
             if (Instance) return;
